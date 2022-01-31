@@ -10,7 +10,7 @@
 }
 
 .avatar-container{
-  padding: 2rem 25rem;
+  margin: 2rem 20rem;
 
 }
 
@@ -63,14 +63,18 @@
   width: 3rem;
 }
 
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 480px) {
 
   .avatar-container{
     padding: 0.5rem;
   }
 
   .avataars{
-    padding: 0.1rem;
+    padding: 0rem;
+  }
+
+  .avatar{
+    margin: 0.8rem;
   }
 
   .avatar-large img{
