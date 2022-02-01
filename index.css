@@ -1,12 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Bebas+Neue&family=IBM+Plex+Serif:wght@300&family=Lora&family=Merriweather:wght@300&family=Montserrat:wght@300&family=Roboto:wght@300&display=swap");
 
 .font {
-  font-family: "Abril Fatface", cursive;
-  font-family: "Bebas Neue", cursive;
-  font-family: "IBM Plex Serif", serif;
-  font-family: "Lora", serif;
-  font-family: "Merriweather", serif;
-  font-family: "Montserrat", sans-serif;
   font-family: "Roboto", sans-serif;
 }
 
@@ -24,7 +18,7 @@
   padding: 1rem;
 }
 
-.header_links {
+.header_links_container {
   margin-left: auto;
 }
 
@@ -34,7 +28,7 @@
   margin: 1rem;
 }
 
-.header_links a {
+.header_links_container a {
   padding: 0.9rem;
   font-size: 1.4rem;
 }
@@ -96,7 +90,7 @@
 }
 
 
-.header_links a:hover {
+.header_links_container a:hover {
   background-color: rgb(243, 132, 132);
   border-radius: 30px;
   transition: 0.3s ease;
@@ -113,7 +107,7 @@
     height: 79.1vh;
   }
 
-  .header_links a{
+  .header_links_container a{
     font-size: 0.8rem;
     padding: 0.2rem;
     margin: 0.3rem;
