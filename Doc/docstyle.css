@@ -140,9 +140,8 @@ img {
   grid-area: footer;
   background-color: var(--primary-color);
 }
-
 /* Avatar component css */
-
+/*
 .avatar-container {
   margin: 2rem 1rem;
   padding-bottom: 4rem;
@@ -190,7 +189,7 @@ img {
 
 
 /* Alert css */
-
+/*
 .alert_main_container {
   padding: 1rem;
   margin: 2rem 0rem;
@@ -258,7 +257,7 @@ img {
 
 
 /* Badge css */
-
+/*
 .badge_container {
   margin: 1rem;
   padding-bottom: 2rem;
@@ -342,7 +341,7 @@ img {
 
 
 /* Media queries */
-
+/*
 @media only screen and (max-width: 480px) {
   .documentation {
     grid-template-columns: 20% 20% 20% 20% 20%;
@@ -457,5 +456,7 @@ img {
     height: 1.5rem;
     margin: 0.5rem;
   }
-}
+} 
+
+*/
 
