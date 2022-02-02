@@ -4,96 +4,84 @@
   --primary-color: #FF6D6D;
 }
 
-.avatar-large img{
+.avatar-container {
+  margin: 2rem 1rem;
+  padding-bottom: 4rem;
+  border-bottom: 1px solid lightgray;
+}
+
+.avatar {
+  margin: 1rem;
+}
+
+.avatar img {
+  border-radius: 50%;
+  border: px solid lightgray;
+}
+
+.avatar-large img {
   height: 10rem;
   width: 10rem;
 }
 
-.avatar-container{
-  margin: 2rem 20rem;
-
-}
-
-.avatar_heading{
-  color: var(--primary-color);
-}
-
-.font{
-  font-family: 'Roboto', sans-serif;
-}
-
-.avatar{
-  margin: 1rem;
-}
-
-.avatar img{
-  border-radius: 50%;
-  /* width: 100%;
-  height: auto; */
-  border: 2px solid lightcoral;
-}
-
-.avatar-medium img{
+.avatar-medium img {
   height: 6rem;
   width: 6rem;
 }
 
-.para_font-size{
-  font-size: 1.2rem;
+.avatar-small img {
+  height: 4rem;
+  width: 4rem;
 }
 
-.avataars{
+.avatar-extra-small img {
+  height: 3rem;
+  width: 3rem;
+}
+
+.avataars {
   padding: 1rem;
   margin-top: 2rem;
   flex-wrap: wrap;
   display: flex;
   border: 1px solid rgb(223, 213, 213);
   align-items: center;
-  width: fit-content;
-  border-radius: 20px;
-}
-
-.avatar-small img{
-  height: 4rem;
-  width: 4rem;
-}
-
-.avatar-extra-small img{
-  height: 3rem;
-  width: 3rem;
+  border-radius: 10px;
 }
 
 @media only screen and (max-width: 480px) {
 
-  .avatar-container{
-    padding: 0.5rem;
+
+  .avatar-container {
+    margin: 0.4rem;
   }
 
-  .avataars{
+  .avataars {
     padding: 0rem;
   }
 
-  .avatar{
+  .avatar {
     margin: 0.8rem;
   }
 
-  .avatar-large img{
+  .avatar-large img {
     height: 4rem;
     width: 4rem;
   }
 
-  .avatar-medium img{
+  .avatar-medium img {
     height: 3rem;
     width: 3rem;
-  }  
+  }
 
-  .avatar-small img{
+  .avatar-small img {
     height: 2rem;
     width: 2rem;
   }
 
-  .avatar-extra-small img{
+  .avatar-extra-small img {
     height: 1rem;
     width: 1rem;
   }
+
 }
