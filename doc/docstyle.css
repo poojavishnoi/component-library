@@ -1,0 +1,431 @@
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Bebas+Neue&family=IBM+Plex+Serif:wght@300&family=Lora&family=Merriweather:wght@300&family=Montserrat:wght@300&family=Roboto:wght@300&display=swap");
+
+@import url(../components/Avatar/avatar.css);
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+:root {
+  --primary-color: #ff7474;
+  --body-color: white;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  object-fit: cover;
+  object-position: top center;
+}
+/* Documentation page css */
+.documentation {
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+  grid-template-areas:
+    "header header header header header"
+    "sidenav main main main main"
+    "sidenav main main main main"
+    "footer footer footer footer footer";
+}
+
+.doc_header {
+  grid-area: header;
+  background-color: var(--primary-color);
+}
+
+.doc_sidenav {
+  grid-area: sidenav;
+  background-color: var(--body-color);
+  border-right: 1px solid lightgray;
+}
+
+.doc_sidenav h2 {
+  margin: 1rem 0rem 1rem 1rem;
+}
+
+.doc_sidenav_list ul {
+  list-style: none;
+  margin-top: 1rem;
+}
+
+.doc_sidenav_list li {
+  padding: 1rem 2rem;
+  cursor: pointer;
+  margin: 0.2rem 2rem;
+}
+.doc_sidenav_list li:hover {
+  border-radius: 20px;
+  transition: 0.3s ease;
+  background-color: rgb(185, 184, 184);
+}
+
+.doc_sidenav_list a {
+  color: black;
+  font-size: 1.2rem;
+  text-decoration: none;
+}
+
+.doc_main {
+  grid-area: main;
+  background-color: var(--body-color);
+  padding: 1rem;
+}
+
+.doc_main p {
+  margin: 1rem 0rem;
+}
+
+/* Basic styling */
+
+.component_main_heading {
+  font-size: 2.5rem;
+}
+
+.para_font-size1 {
+  font-size: 1.4rem;
+}
+
+.para_font-size {
+  font-size: 1.1rem;
+}
+
+/* Header css */
+.header {
+  background-color: #ff6d6d;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.header_links_container {
+  margin-left: auto;
+}
+
+.header a {
+  color: white;
+  text-decoration: none;
+  margin: 1rem;
+}
+
+.header_links_container a {
+  padding: 0.7rem;
+  font-size: 1.4rem;
+}
+.header_links_container a:hover {
+  background-color: rgb(243, 132, 132);
+  border-radius: 30px;
+  transition: 0.3s ease;
+}
+
+
+/* Footer css */
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: #ff6d6d;
+}
+
+.footer img {
+  height: 3rem;
+  margin: 1rem;
+}
+
+.doc_footer {
+  grid-area: footer;
+  background-color: var(--primary-color);
+}
+/* Avatar component css */
+/*
+.avatar-container {
+  margin: 2rem 1rem;
+  padding-bottom: 4rem;
+  border-bottom: 1px solid lightgray;
+}
+
+.avatar {
+  margin: 1rem;
+}
+
+.avatar img {
+  border-radius: 50%;
+  border: px solid lightgray;
+}
+
+.avatar-large img {
+  height: 10rem;
+  width: 10rem;
+}
+
+.avatar-medium img {
+  height: 6rem;
+  width: 6rem;
+}
+
+.avatar-small img {
+  height: 4rem;
+  width: 4rem;
+}
+
+.avatar-extra-small img {
+  height: 3rem;
+  width: 3rem;
+}
+
+.avataars {
+  padding: 1rem;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+  display: flex;
+  border: 1px solid rgb(223, 213, 213);
+  align-items: center;
+  border-radius: 10px;
+}
+*/
+
+/* Alert css */
+
+.alert_main_container {
+  padding: 1rem;
+  margin: 2rem 0rem;
+  border-radius: 10px;
+  border: 1px solid lightgray;
+}
+
+.alert_container {
+  margin: 1rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid lightgray;
+}
+
+.alert {
+  border: 1px solid lightgray;
+  padding: 0.2rem 1rem;
+  border-radius: 10px;
+  margin: 1rem 5rem;
+  display: flex;
+  font-size: 1.2rem;
+  align-items: center;
+  justify-content: start;
+}
+
+.primary_alert {
+  background-color: #ff7474;
+  color: white;
+}
+
+.primary_alert a:hover {
+  border-radius: 20px;
+  transition: 0.4s ease;
+  background-color: rgb(214, 125, 125);
+}
+
+.primary_alert a {
+  margin-left: 0.4rem;
+  padding: 1rem;
+  color: white;
+}
+
+.secondary_alert {
+  background-color: rgb(233, 233, 233);
+}
+
+.successfull_alert {
+  color: rgb(11, 118, 103);
+  background-color: rgb(166, 245, 166);
+}
+
+.alert img {
+  width: 1.5rem;
+  margin-right: 0.5rem;
+}
+
+.danger_alert {
+  color: red;
+  background-color: rgb(250, 166, 166);
+}
+
+.warning_alert {
+  color: rgb(255, 196, 0);
+}
+
+
+
+/* Badge css */
+
+.badge_container {
+  margin: 1rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid lightgray;
+}
+
+.avatar_badge_container {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  border: 1px solid lightgray;
+  border-radius: 10px;
+  padding: 1rem;
+  margin: 2rem 0rem;
+}
+
+.avatar_badge {
+  position: relative;
+  width: fit-content;
+  box-sizing: border-box;
+}
+
+.avatar-large img {
+  width: 8rem;
+  height: 8rem;
+}
+
+.avatar-medium img {
+  width: 6rem;
+  height: 6rem;
+}
+
+.avatar-small img {
+  width: 4rem;
+  height: 4rem;
+}
+
+.status_badge {
+  height: 1.25rem;
+  min-width: 1.25rem;
+  border-radius: 50%;
+  border: 2px solid white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+}
+
+.avatar_badge_online {
+  background-color: green;
+  right: 1.3rem;
+  bottom: 2rem;
+}
+
+.avatar_badge_offline {
+  background-color: red;
+  right: 0.7rem;
+  bottom: 2rem;
+}
+
+.avatar_badge_away {
+  background-color: yellow;
+  right: 0.7rem;
+  bottom: 1.8rem;
+}
+
+.badge_on_icon img {
+  width: 3rem;
+  margin-left: 1rem;
+}
+
+.icon_badge {
+  position: absolute;
+  background-color: rgb(26, 205, 218);
+  color: white;
+  padding: 0.2rem 0.4rem;
+  border-radius: 50%;
+  right: 0rem;
+  bottom: 1.8rem;
+}
+
+
+/* Media queries */
+
+@media only screen and (max-width: 480px) {
+  .documentation {
+    grid-template-columns: 20% 20% 20% 20% 20%;
+
+    grid-template-areas:
+      "header header header header header"
+      "main main main main main"
+      "main main main main main"
+      "footer footer footer footer footer";
+  }
+
+  .doc_sidenav {
+    display: none;
+  }
+
+  .header {
+    padding: 0.1rem 0.4rem;
+  }
+
+  .header a {
+    font-size: 0.5rem;
+    padding: 0.1rem 0rem;
+  }
+
+  .component_main_heading {
+    font-size: 1.4rem;
+  }
+
+  .para_font-size1 {
+    font-size: 1rem;
+  }
+
+  .para_font-size {
+    font-size: 0.8rem;
+  }
+
+  .status_badge {
+    height: 0.8rem;
+    min-width: 0.75rem;
+  }
+
+  .avatar_badge_online {
+    right: 0.9rem;
+    bottom: 1.4rem;
+  }
+
+  .avatar_badge_offline {
+    right: 0.9rem;
+    bottom: 1rem;
+  }
+
+  .avatar_badge_away {
+    right: 0.9rem;
+    bottom: 1rem;
+  }
+
+  .badge_on_icon img {
+    width: 2rem;
+  }
+
+  .icon_badge {
+    font-size: 0.6rem;
+  }
+
+  .alert {
+    border-radius: 10px;
+    padding: 0rem 0.5rem;
+    margin: 0.5rem 0rem;
+    font-size: 0.8rem;
+  }
+
+  .avatar-container,
+  .badge_container,
+  .alert_container {
+    margin: 2rem 0rem;
+    padding: 0rem 0rem 2rem 0rem;
+  }
+
+  .footer img {
+    height: 1.5rem;
+    margin: 0.5rem;
+  }
+} 
+
+
+
