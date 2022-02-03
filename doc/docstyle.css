@@ -1,0 +1,191 @@
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Bebas+Neue&family=IBM+Plex+Serif:wght@300&family=Lora&family=Merriweather:wght@300&family=Montserrat:wght@300&family=Roboto:wght@300&display=swap");
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+:root {
+  --primary-color: #ff7474;
+  --body-color: white;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  object-fit: cover;
+  object-position: top center;
+}
+/* Documentation page css */
+.documentation {
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+  grid-template-areas:
+    "header header header header header"
+    "sidenav main main main main"
+    "sidenav main main main main"
+    "footer footer footer footer footer";
+}
+
+.doc_header {
+  grid-area: header;
+  background-color: var(--primary-color);
+}
+
+.doc_sidenav {
+  grid-area: sidenav;
+  background-color: var(--body-color);
+  border-right: 1px solid lightgray;
+}
+
+.doc_sidenav h2 {
+  margin: 1rem 0rem 1rem 1rem;
+}
+
+.doc_sidenav_list ul {
+  list-style: none;
+  margin-top: 1rem;
+}
+
+.doc_sidenav_list li {
+  padding: 1rem 2rem;
+  cursor: pointer;
+  margin: 0.2rem 2rem;
+}
+.doc_sidenav_list li:hover {
+  border-radius: 20px;
+  transition: 0.3s ease;
+  background-color: rgb(185, 184, 184);
+}
+
+.doc_sidenav_list a {
+  color: black;
+  font-size: 1.2rem;
+  text-decoration: none;
+}
+
+.doc_main {
+  grid-area: main;
+  background-color: var(--body-color);
+  padding: 1rem;
+}
+
+.doc_main p {
+  margin: 1rem 0rem;
+}
+
+/* Basic styling */
+
+.component_main_heading {
+  font-size: 2.5rem;
+}
+
+.para_font-size1 {
+  font-size: 1.4rem;
+}
+
+.para_font-size {
+  font-size: 1.1rem;
+}
+
+/* Header css */
+.header {
+  background-color: #ff6d6d;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.header_links_container {
+  margin-left: auto;
+}
+
+.header a {
+  color: white;
+  text-decoration: none;
+  margin: 1rem;
+}
+
+.header_links_container a {
+  padding: 0.7rem;
+  font-size: 1.4rem;
+}
+.header_links_container a:hover {
+  background-color: rgb(243, 132, 132);
+  border-radius: 30px;
+  transition: 0.3s ease;
+}
+
+
+/* Footer css */
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: #ff6d6d;
+}
+
+.footer img {
+  height: 3rem;
+  margin: 1rem;
+}
+
+.doc_footer {
+  grid-area: footer;
+  background-color: var(--primary-color);
+}
+
+
+/* Media queries */
+
+@media only screen and (max-width: 480px) {
+  .documentation {
+    grid-template-columns: 20% 20% 20% 20% 20%;
+
+    grid-template-areas:
+      "header header header header header"
+      "main main main main main"
+      "main main main main main"
+      "footer footer footer footer footer";
+  }
+
+  .doc_sidenav {
+    display: none;
+  }
+
+  .header {
+    padding: 0.1rem 0.4rem;
+  }
+
+  .header a {
+    font-size: 0.5rem;
+    padding: 0.1rem 0rem;
+  }
+
+  .component_main_heading {
+    font-size: 1.4rem;
+  }
+
+  .para_font-size1 {
+    font-size: 1rem;
+  }
+
+  .para_font-size {
+    font-size: 0.8rem;
+  }
+
+
+  .footer img {
+    height: 1.5rem;
+    margin: 0.5rem;
+  }
+} 
+
+
+
