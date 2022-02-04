@@ -162,8 +162,84 @@
             <span class="icon_badge">4</span>
           </div>
         </div>
+      </div>-->
+      <div class="form_container font">
+        <h1 class="component_main_heading">Form</h1>
+        <p class="para_font-size1">There are form fields listed below and form validation is also styled.</p>
+        <h3>Example of Active form fields</h3>
+        <p class="para_font-size">Add form-label class to labels and form-input for input element, form-input, form-textarea for textarea element(mulitple lines input). <br>
+          Add form-label-required-field class to labels if the field is required, it will show star on the field</p>
+        <div class="form_main_container">
+          <label class="form_label form-label-required-field">Email Address</label>
+          <input type="email" class="form_input" placeholder="name@example.com" required>
+    
+          <label class="form_label">Example Textarea</label>
+          <textarea rows="3" class="form_input" placeholder="Start typing here.."></textarea>
+        </div>
+    
+        <h3>Example of Disabled/Read only form fields</h3>
+        <p  class="para_font-size">Add disabled attribute to your form element to make them disable. No need to add any extra class. <br>
+          Add readonly attribute to your form element to make them read-only. No need to add any extra class.</p>
+        <div class="form_main_container">
+          <input type="email" class="form_input" placeholder="Disabled input" disabled>
+          <input type="email" class="form_input" placeholder="Disabled readonly input" disabled readonly >
+        </div>
+    
+        <h3>Example of Read only plain text form field</h3>
+        <p class="para_font-size">Add read-only attribute to your form element to make them read-only. Add form-field-plain-text class to form field element.</p>
+        <div class="form_main_container">
+          <div class="inline_form_input">
+          <label class="form_label">Email:</label>
+          <input type="email" class="form_input form_input_readonly" placeholder="name@example.com" readonly>
+        </div>
+        <div class="inline_form_input">
+          <label class="form_label" class="form-label-required-field">Enter Password</label>
+          <input type="email" class="form_input" placeholder="Enter Password" >
+        </div>
+        </div>
+    
+        <h3>Example of Form Validation</h3>
+        <p class="para_font-size">Below is the form validation example. You can have error message and check passed message on field level. For html and class, please check below html and for functionality, JavaScript code.</p>
+        <div class="form_main_container">
+            <form class="submit-form-example" novalidate>
+            <div class="inline_form_input">
+                <label class="form-label-required-field form_label">Enter phone number</label>
+                <input type="tel" class="form_input" placeholder="Enter mobile number" required>
+              </div>
+              <div class="inline_form_input">
+                <label class="form-label-required-field form_label">Enter country: </label>
+                
+                <select class="form_input form_input_select">
+                  <option value="India">India</option>
+                  <option value="America">America</option>
+                </select>
+              </div>
+    
+              <div class="inline_form_input">
+                  <label class="form_label">Gender</label>
+                  <span class="flex_radio_input">
+                    <input type="radio" name="gender" class="form_input flex_items">Male</input>
+                    <input type="radio" name="gender" class="form_input flex_items">Female</input>
+                  </span>
+              </div>
+    
+              <div class="inline_form_input">
+                  <label class="form-label-required-field form_label">Enter birthdate: </label>
+                  <input type="date" class="form_input" required>
+                </div>
+                <br/>
+    
+            <input class="form_input" type="checkbox"></input>
+            <label class="form-label-required-field form_label"> Yes, I accept the terms</label>
+            <br>
+            <button class="btn" type="submit">Submit</button>
+            </form>
+        </div>
+    
+    
       </div>
-    </div> -->
+
+    </div> 
     <div class="doc_footer footer">
       <img src="../images/github-sign.png" alt="" />
       <img src="../images/linkedin (1).png" alt="" />
