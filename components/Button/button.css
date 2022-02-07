@@ -1,0 +1,123 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+
+body {
+  font-family: "Roboto", sans-serif;
+} */
+
+:root {
+  --primary-color: #ff6d6d;
+  --disabled-bg-color: #f88e8e;
+  --secondary-color: rgb(213, 213, 213);
+  --secondary-txt-color: rgb(80, 80, 80);
+}
+
+.button_main_container {
+  margin: 1rem 0.5rem;
+}
+
+.btn_main_container {
+  border: 1px solid lightgray;
+  border-radius: 10px;
+  padding: 3rem 2rem;
+  margin-bottom: 1rem;
+}
+
+.btn_main_container a {
+  margin: 1rem;
+  font-size: 1.2rem;
+  display: inline-flex;
+  cursor: pointer;
+}
+
+.btn {
+  border: 1px solid var(--primary-color);
+  padding: 0.7rem 1rem;
+  border-radius: 8px;
+}
+
+.flex-items {
+  flex-wrap: wrap;
+}
+
+.primary_solid_btn,
+.primary_icon_text_btn {
+  color: white;
+  background-color: var(--primary-color);
+}
+
+.primary_outline_btn {
+  color: var(--primary-color);
+}
+
+.primary_link_text {
+  text-decoration: underline;
+  text-decoration-color: var(--primary-color);
+}
+
+.icon_text_btn {
+  align-items: center;
+  display: flex;
+}
+
+.primary_icon_text_btn,
+.secondary_icon_text_btn,
+i {
+  margin-right: 1rem;
+}
+
+.icon_btn {
+  color: var(--primary-color);
+}
+
+.secondary_btn_container .btn {
+  border: 1px solid lightgray;
+}
+
+.secondary_solid_btn {
+  color: var(--secondary-txt-color);
+  background-color: var(--secondary-color);
+}
+
+.secondary_outline_btn,
+.secondary_icon_text_btn,
+.secondary_icon_btn {
+  color: var(--secondary-txt-color);
+}
+
+.secondary_link_text {
+  text-decoration: underline;
+  color: var(--secondary-txt-color);
+}
+
+.btn_disabled {
+  border: 1px solid lightgray;
+  opacity: 0.6;
+  cursor: text !important;
+}
+
+.size_btn_container .small_btn {
+  font-size: 0.9rem;
+  padding: 0.7rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .button_main_container {
+    font-size: 0.7rem;
+  }
+
+  .btn_main_container a {
+    padding: 0.5rem;
+    font-size: 0.7rem;
+    margin: 0.5rem;
+  }
+
+  .btn_main_container {
+    padding: 0.1rem 0;
+  }
+
+  .size_btn_container .small_btn {
+    font-size: 0.6rem;
+    padding: 0.3rem;
+    border-radius: 5px;
+  }
+}
