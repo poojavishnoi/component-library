@@ -1,5 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Bebas+Neue&family=IBM+Plex+Serif:wght@300&family=Lora&family=Merriweather:wght@300&family=Montserrat:wght@300&family=Roboto:wght@300&display=swap");
 @import url(../components/Badge/badge.css);
+@import url(../components/Avatar/avatar.css);
+@import url(../components/Alert/alert.css);
+
 body {
   font-family: "Roboto", sans-serif;
 }
@@ -186,6 +189,90 @@ img {
   align-items: center;
   border-radius: 10px;
 }
+*/
+
+/* Badge css */
+
+.badge_container {
+  margin: 1rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid lightgray;
+}
+
+.avatar_badge_container {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  border: 1px solid lightgray;
+  border-radius: 10px;
+  padding: 1rem;
+  margin: 2rem 0rem;
+}
+
+.avatar_badge {
+  position: relative;
+  width: fit-content;
+  box-sizing: border-box;
+}
+
+.avatar-large img {
+  width: 8rem;
+  height: 8rem;
+}
+
+.avatar-medium img {
+  width: 6rem;
+  height: 6rem;
+}
+
+.avatar-small img {
+  width: 4rem;
+  height: 4rem;
+}
+
+.status_badge {
+  height: 1.25rem;
+  min-width: 1.25rem;
+  border-radius: 50%;
+  border: 2px solid white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+}
+
+.avatar_badge_online {
+  background-color: green;
+  right: 1.3rem;
+  bottom: 2rem;
+}
+
+.avatar_badge_offline {
+  background-color: red;
+  right: 0.7rem;
+  bottom: 2rem;
+}
+
+.avatar_badge_away {
+  background-color: yellow;
+  right: 0.7rem;
+  bottom: 1.8rem;
+}
+
+.badge_on_icon img {
+  width: 3rem;
+  margin-left: 1rem;
+}
+
+.icon_badge {
+  position: absolute;
+  background-color: rgb(26, 205, 218);
+  color: white;
+  padding: 0.2rem 0.4rem;
+  border-radius: 50%;
+  right: 0rem;
+  bottom: 1.8rem;
+}
 
 
 /* Media queries */
@@ -226,10 +313,8 @@ img {
     font-size: 0.8rem;
   }
 
-  .avatar-container {
-    margin: 0.4rem;
-  }
 
+  
   .avataars {
     padding: 0rem;
   }
@@ -286,7 +371,6 @@ img {
     font-size: 0.6rem;
   }
 
-
   .avatar-container,
   .badge_container,
   .alert_container {
@@ -299,5 +383,3 @@ img {
     margin: 0.5rem;
   }
 }
-
-
