@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Bebas+Neue&family=IBM+Plex+Serif:wght@300&family=Lora&family=Merriweather:wght@300&family=Montserrat:wght@300&family=Roboto:wght@300&display=swap");
+@import url(../components/Badge/badge.css);
 @import url(../components/Avatar/avatar.css);
 @import url(../components/Alert/alert.css);
 
@@ -143,7 +144,7 @@ img {
   background-color: var(--primary-color);
 }
 /* Avatar component css */
-/*
+
 .avatar-container {
   margin: 2rem 1rem;
   padding-bottom: 4rem;
@@ -189,74 +190,6 @@ img {
   border-radius: 10px;
 }
 */
-
-/* Alert css */
-/* 
-.alert_main_container {
-  padding: 1rem;
-  margin: 2rem 0rem;
-  border-radius: 10px;
-  border: 1px solid lightgray;
-}
-
-.alert_container {
-  margin: 1rem;
-  padding-bottom: 2rem;
-  border-bottom: 1px solid lightgray;
-}
-
-.alert {
-  border: 1px solid lightgray;
-  padding: 0.2rem 1rem;
-  border-radius: 10px;
-  margin: 1rem 5rem;
-  display: flex;
-  font-size: 1.2rem;
-  align-items: center;
-  justify-content: start;
-}
-
-.primary_alert {
-  background-color: #ff7474;
-  color: white;
-}
-
-.primary_alert a:hover {
-  border-radius: 20px;
-  transition: 0.4s ease;
-  background-color: rgb(214, 125, 125);
-}
-
-.primary_alert a {
-  margin-left: 0.4rem;
-  padding: 1rem;
-  color: white;
-}
-
-.secondary_alert {
-  background-color: rgb(233, 233, 233);
-}
-
-.successfull_alert {
-  color: rgb(11, 118, 103);
-  background-color: rgb(166, 245, 166);
-}
-
-.alert img {
-  width: 1.5rem;
-  margin-right: 0.5rem;
-}
-
-.danger_alert {
-  color: red;
-  background-color: rgb(250, 166, 166);
-}
-
-.warning_alert {
-  color: rgb(255, 196, 0);
-} */
-
-
 
 /* Badge css */
 
@@ -437,13 +370,6 @@ img {
   .icon_badge {
     font-size: 0.6rem;
   }
-/* 
-  .alert {
-    border-radius: 10px;
-    padding: 0rem 0.5rem;
-    margin: 0.5rem 0rem;
-    font-size: 0.8rem;
-  } */
 
   .avatar-container,
   .badge_container,
@@ -456,7 +382,4 @@ img {
     height: 1.5rem;
     margin: 0.5rem;
   }
-} 
-
-
-
+}
