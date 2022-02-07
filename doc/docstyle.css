@@ -1,5 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Bebas+Neue&family=IBM+Plex+Serif:wght@300&family=Lora&family=Merriweather:wght@300&family=Montserrat:wght@300&family=Roboto:wght@300&display=swap");
 @import url(../components/Form/form.css);
+@import url(../components/Button/button.css);
+@import url(../components/Badge/badge.css);
+@import url(../components/Avatar/avatar.css);
+@import url(../components/Alert/alert.css);
+
 body {
   font-family: "Roboto", sans-serif;
 }
@@ -140,204 +145,6 @@ img {
   grid-area: footer;
   background-color: var(--primary-color);
 }
-/* Avatar component css */
-/*
-.avatar-container {
-  margin: 2rem 1rem;
-  padding-bottom: 4rem;
-  border-bottom: 1px solid lightgray;
-}
-
-.avatar {
-  margin: 1rem;
-}
-
-.avatar img {
-  border-radius: 50%;
-  border: px solid lightgray;
-}
-
-.avatar-large img {
-  height: 10rem;
-  width: 10rem;
-}
-
-.avatar-medium img {
-  height: 6rem;
-  width: 6rem;
-}
-
-.avatar-small img {
-  height: 4rem;
-  width: 4rem;
-}
-
-.avatar-extra-small img {
-  height: 3rem;
-  width: 3rem;
-}
-
-.avataars {
-  padding: 1rem;
-  margin-top: 2rem;
-  flex-wrap: wrap;
-  display: flex;
-  border: 1px solid rgb(223, 213, 213);
-  align-items: center;
-  border-radius: 10px;
-}
-
-
-/* Alert css */
-/*
-.alert_main_container {
-  padding: 1rem;
-  margin: 2rem 0rem;
-  border-radius: 10px;
-  border: 1px solid lightgray;
-}
-
-.alert_container {
-  margin: 1rem;
-  padding-bottom: 2rem;
-  border-bottom: 1px solid lightgray;
-}
-
-.alert {
-  border: 1px solid lightgray;
-  padding: 0.2rem 1rem;
-  border-radius: 10px;
-  margin: 1rem 5rem;
-  display: flex;
-  font-size: 1.2rem;
-  align-items: center;
-  justify-content: start;
-}
-
-.primary_alert {
-  background-color: #ff7474;
-  color: white;
-}
-
-.primary_alert a:hover {
-  border-radius: 20px;
-  transition: 0.4s ease;
-  background-color: rgb(214, 125, 125);
-}
-
-.primary_alert a {
-  margin-left: 0.4rem;
-  padding: 1rem;
-  color: white;
-}
-
-.secondary_alert {
-  background-color: rgb(233, 233, 233);
-}
-
-.successfull_alert {
-  color: rgb(11, 118, 103);
-  background-color: rgb(166, 245, 166);
-}
-
-.alert img {
-  width: 1.5rem;
-  margin-right: 0.5rem;
-}
-
-.danger_alert {
-  color: red;
-  background-color: rgb(250, 166, 166);
-}
-
-.warning_alert {
-  color: rgb(255, 196, 0);
-}
-
-
-
-/* Badge css */
-/*
-.badge_container {
-  margin: 1rem;
-  padding-bottom: 2rem;
-  border-bottom: 1px solid lightgray;
-}
-
-.avatar_badge_container {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  border: 1px solid lightgray;
-  border-radius: 10px;
-  padding: 1rem;
-  margin: 2rem 0rem;
-}
-
-.avatar_badge {
-  position: relative;
-  width: fit-content;
-  box-sizing: border-box;
-}
-
-.avatar-large img {
-  width: 8rem;
-  height: 8rem;
-}
-
-.avatar-medium img {
-  width: 6rem;
-  height: 6rem;
-}
-
-.avatar-small img {
-  width: 4rem;
-  height: 4rem;
-}
-
-.status_badge {
-  height: 1.25rem;
-  min-width: 1.25rem;
-  border-radius: 50%;
-  border: 2px solid white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-}
-
-.avatar_badge_online {
-  background-color: green;
-  right: 1.3rem;
-  bottom: 2rem;
-}
-
-.avatar_badge_offline {
-  background-color: red;
-  right: 0.7rem;
-  bottom: 2rem;
-}
-
-.avatar_badge_away {
-  background-color: yellow;
-  right: 0.7rem;
-  bottom: 1.8rem;
-}
-
-.badge_on_icon img {
-  width: 3rem;
-  margin-left: 1rem;
-}
-
-.icon_badge {
-  position: absolute;
-  background-color: rgb(26, 205, 218);
-  color: white;
-  padding: 0.2rem 0.4rem;
-  border-radius: 50%;
-  right: 0rem;
-  bottom: 1.8rem;
-}
 
 
 /* Media queries */
@@ -377,11 +184,7 @@ img {
   .para_font-size {
     font-size: 0.8rem;
   }
-
-  .avatar-container {
-    margin: 0.4rem;
-  }
-
+  
   .avataars {
     padding: 0rem;
   }
@@ -438,13 +241,6 @@ img {
     font-size: 0.6rem;
   }
 
-  .alert {
-    border-radius: 10px;
-    padding: 0rem 0.5rem;
-    margin: 0.5rem 0rem;
-    font-size: 0.8rem;
-  }
-
   .avatar-container,
   .badge_container,
   .alert_container {
@@ -456,5 +252,4 @@ img {
     height: 1.5rem;
     margin: 0.5rem;
   }
-} 
-
+}
