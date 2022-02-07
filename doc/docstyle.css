@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Bebas+Neue&family=IBM+Plex+Serif:wght@300&family=Lora&family=Merriweather:wght@300&family=Montserrat:wght@300&family=Roboto:wght@300&display=swap");
+@import url(../components/Avatar/avatar.css);
 
 body {
   font-family: "Roboto", sans-serif;
@@ -186,10 +187,10 @@ img {
   align-items: center;
   border-radius: 10px;
 }
-
+*/
 
 /* Alert css */
-/*
+
 .alert_main_container {
   padding: 1rem;
   margin: 2rem 0rem;
@@ -257,7 +258,7 @@ img {
 
 
 /* Badge css */
-/*
+
 .badge_container {
   margin: 1rem;
   padding-bottom: 2rem;
@@ -341,7 +342,7 @@ img {
 
 
 /* Media queries */
-/*
+
 @media only screen and (max-width: 480px) {
   .documentation {
     grid-template-columns: 20% 20% 20% 20% 20%;
@@ -376,38 +377,6 @@ img {
 
   .para_font-size {
     font-size: 0.8rem;
-  }
-
-  .avatar-container {
-    margin: 0.4rem;
-  }
-
-  .avataars {
-    padding: 0rem;
-  }
-
-  .avatar {
-    margin: 0.8rem;
-  }
-
-  .avatar-large img {
-    height: 4rem;
-    width: 4rem;
-  }
-
-  .avatar-medium img {
-    height: 3rem;
-    width: 3rem;
-  }
-
-  .avatar-small img {
-    height: 2rem;
-    width: 2rem;
-  }
-
-  .avatar-extra-small img {
-    height: 1rem;
-    width: 1rem;
   }
 
   .status_badge {
@@ -458,5 +427,5 @@ img {
   }
 } 
 
-*/
+
 
