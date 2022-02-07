@@ -5,6 +5,12 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="docstyle.css">
+  <link
+  rel="stylesheet"
+  href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+  integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+  crossorigin="anonymous"
+/>
   <title>NeoDev UI</title>
 </head>
 <body>
@@ -15,7 +21,7 @@
           <a href="#"><h1>NeoDev UI</h1></a>
         </div>
         <div class="header_links_container">
-          <a class="header_link" href="#">Documentation</a>
+          <a class="header_link" href="/doc/doc.html">Documentation</a>
           <a class="header_link" href="#">Github</a>
         </div>
       </div>
@@ -40,10 +46,10 @@
           <li><a href="#">Typography</a></li>
           <li><a href="#">Toast</a></li>
         </ul>
-      </div>
+      </div> 
     </div>
     <div class="doc_main">
-      <!-- <div class="avatar-container font">
+       <div class="avatar-container font">
         <h1 class="component_main_heading">Avataars</h1>
         <p class="para_font-size1">
           Avatar can be used to show user's profile picture on profile
@@ -75,6 +81,7 @@
       <div class="alert_container">
         <h1 class="component_main_heading">
           Alerts
+     
         </h1>
         <p class="para_font-size1">
           Alerts are used to attract user's attention for important
@@ -163,7 +170,6 @@
           </div>
         </div>
       </div>
-      -->
 
       <div class="list_container ">
         <h1  class="component_main_heading">Lists</h1>
@@ -238,6 +244,91 @@
       </ul>
     </div>
     </div> 
+
+      <div class="button_main_container">
+      <h1 class="component_main_heading">Buttons</h1>
+      <p class="para_font-size1">
+        Buttons are also called as call to action. We have range of buttons
+        and their states. You may use a tag or button element, you need to add
+        respective classes, and you are good to go.
+      </p>
+      <h3>Example of Primary Button Styles</h3>
+      <p class="para_font-size">
+        Whenever you want your user to click on a link or button, use primary
+        style buttons.
+      </p>
+  
+      <div class="button_container">
+        <div class="btn_main_container">
+          <a class="btn flex-items primary_solid_btn">Primary Solid</a>
+          <a class="btn flex-items primary_outline_btn">Primary outline</a>
+          <a class="btn flex-items primary_icon_text_btn">
+            <div class="icon_text_btn">
+              <span><i class="fas fa-shopping-cart"></i></span> Add to cart
+            </div></a
+          >
+          <a class="flex-items primary_link_text">primary text</a>
+          <a class="flex-items icon_btn"
+            ><i class="fas fa-shopping-cart"></i
+          ></a>
+        </div>
+  
+        <h3>Example of Secondary Button Styles</h3>
+        <p class="para_font-size">
+          If you want user not to pay attention to buttons then use Secondary
+          buttons. You can directly copy below html code and use it in your
+          app.
+        </p>
+  
+        <div class="btn_main_container secondary_btn_container">
+          <a class="btn flex-items secondary_solid_btn">Secondary Solid</a>
+          <a class="btn flex-items secondary_outline_btn"
+            >Secondary outline</a
+          >
+          <a class="btn flex-items secondary_icon_text_btn">
+            <div class="icon_text_btn">
+              <span>
+                <i class="fas fa-trash"></i>
+              </span>
+              Delete
+            </div></a
+          >
+          <a class="flex-items secondary_link_text">Secondary text</a>
+          <a class="flex-items secondary_icon_btn"
+            ><i class="fas fa-trash"></i
+          ></a>
+        </div>
+  
+        <h3>Example of Disabled Button</h3>
+        <p class="para_font-size">
+          If you want to style disabled button add btn-disabled class and you
+          are good to go.
+        </p>
+        <div class="btn_main_container">
+          <a class="btn primary_solid_btn btn_disabled">Primary Solid</a>
+          <a class="btn secondary_icon_text_btn btn_disabled">
+            <div class="icon_text_btn">
+              <span><i class="fas fa-trash"></i></span>Delete
+            </div></a
+          >
+        </div>
+  
+        <h3>Example of Different Button Sizes</h3>
+        <p class="para_font-size">
+          If you want to have different size for your button, you can add
+          large_btn, small_btn class for large and small size respectively.
+        </p>
+  
+        <div class="btn_main_container size_btn_container">
+          <a class="btn primary_solid_btn large_btn">Large CTA</a>
+          <a class="btn primary_solid_btn small_btn">Small CTA</a>
+        </div>
+      </div>
+    </div>
+    </div>
+
+    
+  </div>
     <div class="doc_footer footer">
       <img src="../images/github-sign.png" alt="" />
       <img src="../images/linkedin (1).png" alt="" />
