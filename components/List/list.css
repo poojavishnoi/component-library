@@ -1,7 +1,7 @@
 
 :root {
   --list-background: rgb(245, 245, 245);
-  --list-border-color: #ff7474;
+  --list-border-color: lightgray;
   --list-item-color: rgb(88, 88, 88);
 }
 
