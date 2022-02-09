@@ -1,6 +1,7 @@
 :root {
   --primary-color: #ff6d6d;
-  --text-color: rgb(73, 73, 73);
+  --text-color: #494949;
+  --border-color: #e0e0e0;
 }
 
 * {
@@ -16,7 +17,10 @@
 .form_main_container {
   display: flex;
   margin: 2rem 0rem;
+  padding: 2rem;
   flex-direction: column;
+  border-radius: 1rem;
+  border: 1px solid var(--border-color);
 }
 
 .form_label,
@@ -32,7 +36,7 @@
   margin: 0.5rem 0;
 }
 
-.form-label-required-field:after {
+.form-label-required:after {
   content: "*";
   color: var(--primary-color);
 }
