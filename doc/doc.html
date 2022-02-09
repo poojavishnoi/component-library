@@ -42,9 +42,9 @@
           <li><a href="#">Navigation</a></li>
           <li><a href="#">Rating</a></li>
           <li><a href="#">Slider</a></li>
+          <li><a href="#">Snackbar</a></li>
           <li><a href="#">Grid Simplified</a></li>
           <li><a href="#">Typography</a></li>
-          <li><a href="#">Toast</a></li>
         </ul>
       </div> 
     </div>
@@ -251,6 +251,48 @@
         </div>
       </div>
     </div>
+
+    <div class="font snackbar_main_container">
+      <h1 class="component_main_heading">Snackbar</h1>
+      <p class="para_font-size1">This component can be used for toast or snackbar component. Toast is mostly used to show feedback message. Snackbar is to used show message that need user action</p>
+      <p class="para_font-size">Just add class as baseline_snackbar, leading_snackbar and stacked_snackbar along with snackbar_container. Also add id as baseline_snackbar, leading_snackbar and stacked_snackbar for functionality</p>
+      <div class="btn_container">
+        <button id="baseline" class="btn font">Baseline</button>
+        <button id="leading" class="btn font">Leading</button>
+        <button id="stacked" class="btn font">Stacked</button>
+      </div>
+      <div id="baseline_snackbar" class="snackbar_container baseline_snackbar">
+        <p>Can't send photo. Retry in 5 seconds</p>
+        <div class="snackbar_button">
+        <a href="#"><p>Retry</p></a>
+        <a id="baseline_close" href="#"><p>X</p></a>
+        </div>
+      </div>
+      <div id="leading_snackbar" class="snackbar_container leading_snackbar">
+        <p>Can't send photo. Retry in 5 seconds</p>
+        <div class="snackbar_button">
+        <a href="#"><p>Retry</p></a>
+        <a id="leading_close" href="#"><p>X</p></a>
+        </div>
+      </div>
+      <div id="stacked_snackbar" class="snackbar_container stacked_snackbar">
+        <p>
+          This item already has the label "travel". You can add a new label.
+        </p>
+        <div class="snackbar_button">
+          <a href="#"><p>ADD A NEW LABEL</p></a>
+          <a id="stack_close" href="#"><p>X</p></a>
+        </div>
+        </div>
+      </div>
+
+      <div class="code_container">
+        <iframe
+  src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=twilight&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=21px&ph=21px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520id%253D%2522baseline_snackbar%2522%2520class%253D%2522snackbar_container%2520baseline_snackbar%2522%253E%250A%2520%2520%253Cp%253ECan%27t%2520send%2520photo.%2520Retry%2520in%25205%2520seconds%253C%252Fp%253E%250A%2520%2520%253Cdiv%2520class%253D%2522snackbar_button%2522%253E%250A%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cp%253ERetry%253C%252Fp%253E%250A%2520%2520%2520%2520%253C%252Fa%253E%250A%2520%2520%2520%2520%253Ca%2520id%253D%2522baseline_close%2522%2520href%253D%2522%2523%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cp%253EX%253C%252Fp%253E%250A%2520%2520%2520%2520%253C%252Fa%253E%250A%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A"
+  style="border:0;overflow:hidden;"
+  sandbox="allow-scripts allow-same-origin">
+</iframe>
+      </div>
     </div>
 
     
@@ -261,6 +303,6 @@
       <img src="../images/twitter-sign.png" alt="" />
     </div>
   </div>
-  
+  <script src="../components/Snackbar/snackbar.js"></script>
 </body>
 </html>
