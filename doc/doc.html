@@ -176,13 +176,21 @@
         <p class="para_font-size1">There are form fields listed below and form validation is also styled.</p>
         <h3>Example of Active form fields</h3>
         <p class="para_font-size">Add form-label class to labels and form-input for input element, form-input, form-textarea for textarea element(mulitple lines input). <br>
-          Add form-label-required-field class to labels if the field is required, it will show star on the field</p>
+          Add form-label-required class to labels if the field is required, it will show star on the field</p>
         <div class="form_main_container">
-          <label class="form_label form-label-required-field">Email Address</label>
+          <label class="form_label form-label-required">Email Address</label>
           <input type="email" class="form_input" placeholder="name@example.com" required>
     
           <label class="form_label">Example Textarea</label>
           <textarea rows="3" class="form_input" placeholder="Start typing here.."></textarea>
+        </div>
+
+        <div class="code_container">
+          <iframe
+  src="https://carbon.now.sh/embed?bg=rgba%28249%2C237%2C212%2C1%29&t=twilight&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=16px&ph=20px&ln=false&fl=1&fm=IBM+Plex+Mono&fs=14px&lh=143%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522form_main_container%2522%253E%250A%2520%2520%253Clabel%2520class%253D%2522form_label%2520form-label-required%2522%253EEmail%2520Address%253C%252Flabel%253E%250A%2520%2520%253Cinput%2520type%253D%2522email%2522%2520class%253D%2522form_input%2522%2520placeholder%253D%2522name%2540example.com%2522%2520required%253E%250A%2520%2520%2520%2520%250A%2520%2520%253Clabel%2520class%253D%2522form_label%2522%253EExample%2520Textarea%253C%252Flabel%253E%250A%2520%2520%253Ctextarea%2520rows%253D%25223%2522%2520class%253D%2522form_input%2522%2520placeholder%253D%2522Start%2520typing%2520here..%2522%253E%253C%252Ftextarea%253E%250A%253C%252Fdiv%253E"
+  style="border:0; overflow:hidden;"
+  sandbox="allow-scripts allow-same-origin">
+</iframe>
         </div>
     
         <h3>Example of Disabled/Read only form fields</h3>
@@ -193,6 +201,13 @@
           <input type="email" class="form_input" placeholder="Disabled readonly input" disabled readonly >
         </div>
     
+        <div class="code_container">
+          <iframe
+  src="https://carbon.now.sh/embed?bg=rgba%28249%2C237%2C212%2C1%29&t=twilight&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=16px&ph=20px&ln=false&fl=1&fm=IBM+Plex+Mono&fs=14px&lh=143%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522form_main_container%2522%253E%250A%2520%2520%253Cinput%2520type%253D%2522email%2522%2520class%253D%2522form_input%2522%2520placeholder%253D%2522Disabled%2520input%2522%2520disabled%253E%250A%2520%2520%253Cinput%2520type%253D%2522email%2522%2520class%253D%2522form_input%2522%2520placeholder%253D%2522Disabled%2520readonly%2520input%2522%2520disabled%2520readonly%2520%253E%250A%253C%252Fdiv%253E"
+  style="border:0;overflow:hidden;"
+  sandbox="allow-scripts allow-same-origin">
+</iframe>
+        </div>
         <h3>Example of Read only plain text form field</h3>
         <p class="para_font-size">Add read-only attribute to your form element to make them read-only. Add form-field-plain-text class to form field element.</p>
         <div class="form_main_container">
@@ -201,9 +216,17 @@
           <input type="email" class="form_input form_input_readonly" placeholder="name@example.com" readonly>
         </div>
         <div class="inline_form_input">
-          <label class="form_label" class="form-label-required-field">Enter Password</label>
+          <label class="form_label" class="form-label-required">Enter Password:</label>
           <input type="email" class="form_input" placeholder="Enter Password" >
         </div>
+        </div>
+
+        <div class="code_container">
+          <iframe
+  src="https://carbon.now.sh/embed?bg=rgba%28249%2C237%2C212%2C1%29&t=twilight&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=16px&ph=20px&ln=false&fl=1&fm=IBM+Plex+Mono&fs=14px&lh=143%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522form_main_container%2522%253E%250A%2520%2520%253Cdiv%2520class%253D%2522inline_form_input%2522%253E%250A%2520%2520%2520%2520%253Clabel%2520class%253D%2522form_label%2522%253EEmail%253A%253C%252Flabel%253E%250A%2520%2520%2520%2520%253Cinput%2520type%253D%2522email%2522%2520class%253D%2522form_input%2520form_input_readonly%2522%2520placeholder%253D%2522name%2540example.com%2522%2520readonly%253E%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522inline_form_input%2522%253E%250A%2520%2520%2520%2520%253Clabel%2520class%253D%2522form_label%2522%2520class%253D%2522form-label-required%2522%253EEnter%2520Password%253C%252Flabel%253E%250A%2520%2520%2520%2520%253Cinput%2520type%253D%2522email%2522%2520class%253D%2522form_input%2522%2520placeholder%253D%2522Enter%2520Password%2522%2520%253E%250A%2520%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
+  style="border:0; overflow:hidden;"
+  sandbox="allow-scripts allow-same-origin">
+</iframe>
         </div>
     
         <h3>Example of Form Validation</h3>
@@ -211,11 +234,11 @@
         <div class="form_main_container">
             <form class="submit-form-example" novalidate>
             <div class="inline_form_input">
-                <label class="form-label-required-field form_label">Enter phone number</label>
+                <label class="form-label-required form_label">Enter phone number</label>
                 <input type="tel" class="form_input" placeholder="Enter mobile number" required>
               </div>
               <div class="inline_form_input">
-                <label class="form-label-required-field form_label">Enter country: </label>
+                <label class="form-label-required form_label">Enter country: </label>
                 
                 <select class="form_input form_input_select">
                   <option value="India">India</option>
@@ -232,16 +255,24 @@
               </div>
     
               <div class="inline_form_input">
-                  <label class="form-label-required-field form_label">Enter birthdate: </label>
+                  <label class="form-label-required form_label">Enter birthdate: </label>
                   <input type="date" class="form_input" required>
                 </div>
                 <br/>
     
             <input class="form_input" type="checkbox"></input>
-            <label class="form-label-required-field form_label"> Yes, I accept the terms</label>
+            <label class="form-label-required form_label"> Yes, I accept the terms</label>
             <br>
             <button class="btn" type="submit">Submit</button>
             </form>
+        </div>
+
+        <div class="code_container">
+          <iframe
+  src="https://carbon.now.sh/embed?bg=rgba%28249%2C237%2C212%2C1%29&t=twilight&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=16px&ph=20px&ln=false&fl=1&fm=IBM+Plex+Mono&fs=14px&lh=143%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522form_main_container%2522%253E%250A%2520%2520%253Cform%2520class%253D%2522submit-form-example%2522%2520novalidate%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522inline_form_input%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%253Clabel%2520class%253D%2522form-label-required%2520form_label%2522%253EEnter%2520phone%2520number%253C%252Flabel%253E%250A%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520type%253D%2522tel%2522%2520class%253D%2522form_input%2522%2520placeholder%253D%2522Enter%2520mobile%2520number%2522%2520required%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522inline_form_input%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%253Clabel%2520class%253D%2522form-label-required%2520form_label%2522%253EEnter%2520country%253A%2520%253C%252Flabel%253E%2520%2520%2520%2520%2520%2520%2520%2520%2520%250A%2520%2520%2520%2520%2520%2520%2520%253Cselect%2520class%253D%2522form_input%2520form_input_select%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Coption%2520value%253D%2522India%2522%253EIndia%253C%252Foption%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Coption%2520value%253D%2522America%2522%253EAmerica%253C%252Foption%253E%250A%2520%2520%2520%2520%2520%2520%2520%253C%252Fselect%253E%250A%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%250A%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522inline_form_input%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%253Clabel%2520class%253D%2522form_label%2522%253EGender%253C%252Flabel%253E%250A%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522flex_radio_input%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520type%253D%2522radio%2522%2520name%253D%2522gender%2522%2520class%253D%2522form_input%2520flex_items%2522%253EMale%253C%252Finput%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520type%253D%2522radio%2522%2520name%253D%2522gender%2522%2520class%253D%2522form_input%2520flex_items%2522%253EFemale%253C%252Finput%253E%250A%2520%2520%2520%2520%2520%2520%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%250A%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522inline_form_input%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%253Clabel%2520class%253D%2522form-label-required%2520form_label%2522%253EEnter%2520birthdate%253A%2520%253C%252Flabel%253E%250A%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520type%253D%2522date%2522%2520class%253D%2522form_input%2522%2520required%253E%250A%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%253Cbr%252F%253E%250A%2520%2520%2520%2520%250A%2520%2520%2520%2520%2520%253Cinput%2520class%253D%2522form_input%2522%2520type%253D%2522checkbox%2522%253E%253C%252Finput%253E%250A%2520%2520%2520%2520%2520%253Clabel%2520class%253D%2522form-label-required%2520form_label%2522%253E%2520Yes%252C%2520I%2520accept%2520the%2520terms%253C%252Flabel%253E%250A%2520%2520%2520%2520%2520%253Cbr%253E%250A%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2522%2520type%253D%2522submit%2522%253ESubmit%253C%252Fbutton%253E%250A%2520%2520%2520%253C%252Fform%253E%250A%253C%252Fdiv%253E"
+  style="border:0;overflow:hidden;"
+  sandbox="allow-scripts allow-same-origin">
+</iframe>
         </div>
     
     
