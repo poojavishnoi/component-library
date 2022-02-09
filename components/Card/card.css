@@ -1,0 +1,138 @@
+:root {
+  --text-color: rgb(97, 97, 97);
+  --button-color: rgb(102, 174, 202);
+  --border-color: rgb(211, 211, 211);
+}
+
+.card_container {
+  margin: 1rem 0.5rem;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 1rem 0;
+  gap: 3rem;
+}
+
+.card_main_container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 18rem;
+  border-radius: 1rem;
+  border: 1px solid var(--border-color);
+  overflow: hidden;
+  position: relative;
+}
+.card_main_container img {
+  width: 18rem;
+}
+
+.card_owner {
+  padding-left: 1rem;
+  margin-top: 1rem;
+}
+
+.card_owner_overlap {
+  position: absolute;
+  color: white;
+  top: 6rem;
+  left: 1rem;
+}
+
+.card_content p {
+  color: var(--text-color);
+}
+
+.card_content {
+  padding: 0.5rem 0.8rem;
+}
+
+.card_footer {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  border-top: 1px solid var(--border-color);
+}
+
+.card_buttons button {
+  font-family: "Roboto", sans-serif;
+  border: none;
+  background-color: transparent;
+  margin: 0.8rem 0.4rem;
+  font-weight: bolder;
+  cursor: pointer;
+  font-size: 1.2rem;
+  color: var(--button-color);
+}
+
+.card_icons {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: auto;
+}
+
+.card_icons button {
+  border: none;
+  background-color: white;
+  cursor: pointer;
+  padding: 0.3rem;
+  margin: 0.8rem 0.2rem;
+}
+
+.card_buttons button:hover {
+  transform: scale(1.1);
+  color: var(--text-color);
+  transition: 0.1s ease-in;
+}
+
+.card_icons button:hover {
+  background-color: rgb(214, 214, 214);
+  transform: scale(1.05);
+  transition: 0.1s ease-in;
+  border-radius: 10px;
+}
+
+.card_icons img {
+  width: 25px;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    font-size: 0.7rem;
+  }
+
+  .cards {
+    margin: 0.5rem;
+  }
+
+  .card_main_container {
+    margin: 0;
+    width: 13rem;
+  }
+
+  .card_main_container img {
+    width: 13rem;
+  }
+
+  .card_content {
+    padding: 0 0.5rem;
+  }
+
+  .card_owner {
+    margin: 1rem 0.3rem 0 0.3rem;
+    padding: 0;
+  }
+
+  .card_buttons button {
+    margin: 0.5rem 0.2rem;
+    font-size: 0.7rem;
+    color: rgb(102, 174, 202);
+  }
+
+  .card_icons img {
+    width: 1.1rem;
+  }
+}

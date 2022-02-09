@@ -1,266 +1,409 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="docstyle.css">
-  <link
-  rel="stylesheet"
-  href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
-  integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
-  crossorigin="anonymous"
-/>
-  <title>NeoDev UI</title>
-</head>
-<body>
-  <div class="documentation">
-    <div class="doc_header">
-      <div class="header">
-        <div class="header_logo">
-          <a href="#"><h1>NeoDev UI</h1></a>
-        </div>
-        <div class="header_links_container">
-          <a class="header_link" href="/doc/doc.html">Documentation</a>
-          <a class="header_link" href="#">Github</a>
-        </div>
-      </div>
-    </div>
-    <div class="doc_sidenav">
-      <h2>Components</h2>
-      <div class="doc_sidenav_list">
-        <ul>
-          <li><a href="#">Avatars</a></li>
-          <li><a href="#">Alerts</a></li>
-          <li><a href="#">Badge</a></li>
-          <li><a href="#">Button</a></li>
-          <li><a href="#">Cards</a></li>
-          <li><a href="#">Form</a></li>
-          <li><a href="#">Image</a></li>
-          <li><a href="#">List</a></li>
-          <li><a href="#">Modal</a></li>
-          <li><a href="#">Navigation</a></li>
-          <li><a href="#">Rating</a></li>
-          <li><a href="#">Slider</a></li>
-          <li><a href="#">Grid Simplified</a></li>
-          <li><a href="#">Typography</a></li>
-          <li><a href="#">Toast</a></li>
-        </ul>
-      </div> 
-    </div>
-    <div class="doc_main">
-       <div class="avatar-container font">
-        <h1 class="component_main_heading">Avataars</h1>
-        <p class="para_font-size1">
-          Avatar can be used to show user's profile picture on profile
-          information page, on navigation bar, in blogs grid items.
-        </p>
-        <h3>Example of Image Avataar</h3>
-        <p class="para_font-size">
-          Avatar is available in 4 different sizes. You can use image in
-          Avatar. You need to include class avatar and for size add class
-          according to size avatar-large, avatar-medium, avatar-small,
-          avatar-extra-small (e.g. class="avatar avatar-large")
-        </p>
-        <div class="avataars">
-          <div class="avatar avatar-large">
-            <img src="../images/profile.jpg" alt="" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="docstyle.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+      integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+      crossorigin="anonymous"
+    />
+    <title>NeoDev UI</title>
+  </head>
+  <body>
+    <div class="documentation">
+      <div class="doc_header">
+        <div class="header">
+          <div class="header_logo">
+            <a href="#"><h1>NeoDev UI</h1></a>
           </div>
-          <div class="avatar avatar-medium">
-            <img src="../images/profile.jpg" alt="" />
-          </div>
-          <div class="avatar avatar-small">
-            <img src="../images/profile.jpg" alt="" />
-          </div>
-          <div class="avatar avatar-extra-small">
-            <img src="../images/profile.jpg" alt="" />
+          <div class="header_links_container">
+            <a class="header_link" href="/doc/doc.html">Documentation</a>
+            <a class="header_link" href="#">Github</a>
           </div>
         </div>
       </div>
-
-      <div class="alert_container">
-        <h1 class="component_main_heading">
-          Alerts
-     
-        </h1>
-        <p class="para_font-size1">
-          Alerts are used to attract user's attention for important
-          information without interrupting the user's flow.
-        </p>
-        <h3>
-          Examples of Alerts
-        </h3>
-        <p class="para_font-size">
-          Alerts are available in 5 types- success alert, error alert,
-          warning alert, primary alert, secondary alert. To use this alert
-          just use class name alert-box and also add class according to
-          alert type- primary_alert, secondary_alert, danger_alert,
-          successfull_alert, warning_alert. (e.g.class="alert-box
-          alert-primary"). You can copy html part from below code snippet.
-        </p>
-        <div class="alert_main_container">
-          <div class="primary_alert alert">
-            <p>
-              A primary alert example with a text link
-              <a href="#">Click this link</a>
-            </p>
-          </div>
-          <div class="secondary_alert alert">
-            <p>
-              A secondary alert example!!!
-            </p>
-          </div>
-          <div class="successfull_alert alert">
-            <img src="../images/check.png" alt="" />
-            <p>A success alert example!!!!</p>
-          </div>
-
-          <div class="danger_alert alert">
-            <img src="../images/warning.png" alt="" />
-            <p>A danger alert example!!!!</p>
-          </div>
-
-          <div class="warning_alert alert">
-            <img src="../images/yellow-warning.png" alt="" />
-            <p>A warning alert example!!!!</p>
-          </div>
+      <div class="doc_sidenav">
+        <h2>Components</h2>
+        <div class="doc_sidenav_list">
+          <ul>
+            <li><a href="#">Avatars</a></li>
+            <li><a href="#">Alerts</a></li>
+            <li><a href="#">Badge</a></li>
+            <li><a href="#">Button</a></li>
+            <li><a href="#">Cards</a></li>
+            <li><a href="#">Form</a></li>
+            <li><a href="#">Image</a></li>
+            <li><a href="#">List</a></li>
+            <li><a href="#">Modal</a></li>
+            <li><a href="#">Navigation</a></li>
+            <li><a href="#">Rating</a></li>
+            <li><a href="#">Slider</a></li>
+            <li><a href="#">Grid Simplified</a></li>
+            <li><a href="#">Typography</a></li>
+            <li><a href="#">Toast</a></li>
+          </ul>
         </div>
       </div>
-
-      <div class="badge_container">
-        <h1>Badge</h1>
-        <p class="para_font-size1">
-          Badges are being used to display a notification count or status
-          information
-        </p>
-        <h3>Example of Status Badge</h3>
-        <p class="para_font-size">
-          We have 2 types of status badges that can be integrated with
-          Avatars. You can show colors to show the online status of user.
-          And to show cart or notification count, you can use number badge.
-          Check code below to copy the html part as is.
-        </p>
-        <div class="avatar_badge_container">
-          <div class="avatar_badge">
+      <div class="doc_main">
+        <div class="avatar-container font">
+          <h1 class="component_main_heading">Avataars</h1>
+          <p class="para_font-size1">
+            Avatar can be used to show user's profile picture on profile
+            information page, on navigation bar, in blogs grid items.
+          </p>
+          <h3>Example of Image Avataar</h3>
+          <p class="para_font-size">
+            Avatar is available in 4 different sizes. You can use image in
+            Avatar. You need to include class avatar and for size add class
+            according to size avatar-large, avatar-medium, avatar-small,
+            avatar-extra-small (e.g. class="avatar avatar-large")
+          </p>
+          <div class="avataars">
             <div class="avatar avatar-large">
-              <img src="../images/profile1.jpg" alt="" />
+              <img src="../images/profile.jpg" alt="" />
             </div>
-            <span class="avatar_badge_online status_badge"></span>
-          </div>
-
-          <div class="avatar_badge">
             <div class="avatar avatar-medium">
-              <img src="../images/profile2.jpg" alt="" />
+              <img src="../images/profile.jpg" alt="" />
             </div>
-            <span class="avatar_badge_offline status_badge"></span>
-          </div>
-
-          <div class="avatar_badge">
             <div class="avatar avatar-small">
-              <img src="../images/profile3.jpg" alt="" />
+              <img src="../images/profile.jpg" alt="" />
             </div>
-            <span class="avatar_badge_away status_badge"></span>
+            <div class="avatar avatar-extra-small">
+              <img src="../images/profile.jpg" alt="" />
+            </div>
           </div>
+        </div>
 
-          <div class="avatar_badge">
-            <div class="badge_on_icon">
-              <img src="../images/home.png" />
+        <div class="alert_container">
+          <h1 class="component_main_heading">Alerts</h1>
+          <p class="para_font-size1">
+            Alerts are used to attract user's attention for important
+            information without interrupting the user's flow.
+          </p>
+          <h3>Examples of Alerts</h3>
+          <p class="para_font-size">
+            Alerts are available in 5 types- success alert, error alert, warning
+            alert, primary alert, secondary alert. To use this alert just use
+            class name alert-box and also add class according to alert type-
+            primary_alert, secondary_alert, danger_alert, successfull_alert,
+            warning_alert. (e.g.class="alert-box alert-primary"). You can copy
+            html part from below code snippet.
+          </p>
+          <div class="alert_main_container">
+            <div class="primary_alert alert">
+              <p>
+                A primary alert example with a text link
+                <a href="#">Click this link</a>
+              </p>
             </div>
-            <span class="icon_badge">4</span>
+            <div class="secondary_alert alert">
+              <p>A secondary alert example!!!</p>
+            </div>
+            <div class="successfull_alert alert">
+              <img src="../images/check.png" alt="" />
+              <p>A success alert example!!!!</p>
+            </div>
+
+            <div class="danger_alert alert">
+              <img src="../images/warning.png" alt="" />
+              <p>A danger alert example!!!!</p>
+            </div>
+
+            <div class="warning_alert alert">
+              <img src="../images/yellow-warning.png" alt="" />
+              <p>A warning alert example!!!!</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="badge_container">
+          <h1>Badge</h1>
+          <p class="para_font-size1">
+            Badges are being used to display a notification count or status
+            information
+          </p>
+          <h3>Example of Status Badge</h3>
+          <p class="para_font-size">
+            We have 2 types of status badges that can be integrated with
+            Avatars. You can show colors to show the online status of user. And
+            to show cart or notification count, you can use number badge. Check
+            code below to copy the html part as is.
+          </p>
+          <div class="avatar_badge_container">
+            <div class="avatar_badge">
+              <div class="avatar avatar-large">
+                <img src="../images/profile1.jpg" alt="" />
+              </div>
+              <span class="avatar_badge_online status_badge"></span>
+            </div>
+
+            <div class="avatar_badge">
+              <div class="avatar avatar-medium">
+                <img src="../images/profile2.jpg" alt="" />
+              </div>
+              <span class="avatar_badge_offline status_badge"></span>
+            </div>
+
+            <div class="avatar_badge">
+              <div class="avatar avatar-small">
+                <img src="../images/profile3.jpg" alt="" />
+              </div>
+              <span class="avatar_badge_away status_badge"></span>
+            </div>
+
+            <div class="avatar_badge">
+              <div class="badge_on_icon">
+                <img src="../images/home.png" />
+              </div>
+              <span class="icon_badge">4</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="button_main_container">
+          <h1 class="component_main_heading">Buttons</h1>
+          <p class="para_font-size1">
+            Buttons are also called as call to action. We have range of buttons
+            and their states. You may use a tag or button element, you need to
+            add respective classes, and you are good to go.
+          </p>
+          <h3>Example of Primary Button Styles</h3>
+          <p class="para_font-size">
+            Whenever you want your user to click on a link or button, use
+            primary style buttons.
+          </p>
+
+          <div class="button_container">
+            <div class="btn_main_container">
+              <a class="btn flex-items primary_solid_btn">Primary Solid</a>
+              <a class="btn flex-items primary_outline_btn">Primary outline</a>
+              <a class="btn flex-items primary_icon_text_btn">
+                <div class="icon_text_btn">
+                  <span><i class="fas fa-shopping-cart"></i></span> Add to cart
+                </div></a
+              >
+              <a class="flex-items primary_link_text">primary text</a>
+              <a class="flex-items icon_btn"
+                ><i class="fas fa-shopping-cart"></i
+              ></a>
+            </div>
+
+            <h3>Example of Secondary Button Styles</h3>
+            <p class="para_font-size">
+              If you want user not to pay attention to buttons then use
+              Secondary buttons. You can directly copy below html code and use
+              it in your app.
+            </p>
+
+            <div class="btn_main_container secondary_btn_container">
+              <a class="btn flex-items secondary_solid_btn">Secondary Solid</a>
+              <a class="btn flex-items secondary_outline_btn"
+                >Secondary outline</a
+              >
+              <a class="btn flex-items secondary_icon_text_btn">
+                <div class="icon_text_btn">
+                  <span>
+                    <i class="fas fa-trash"></i>
+                  </span>
+                  Delete
+                </div></a
+              >
+              <a class="flex-items secondary_link_text">Secondary text</a>
+              <a class="flex-items secondary_icon_btn"
+                ><i class="fas fa-trash"></i
+              ></a>
+            </div>
+
+            <h3>Example of Disabled Button</h3>
+            <p class="para_font-size">
+              If you want to style disabled button add btn-disabled class and
+              you are good to go.
+            </p>
+            <div class="btn_main_container">
+              <a class="btn primary_solid_btn btn_disabled">Primary Solid</a>
+              <a class="btn secondary_icon_text_btn btn_disabled">
+                <div class="icon_text_btn">
+                  <span><i class="fas fa-trash"></i></span>Delete
+                </div></a
+              >
+            </div>
+
+            <h3>Example of Different Button Sizes</h3>
+            <p class="para_font-size">
+              If you want to have different size for your button, you can add
+              large_btn, small_btn class for large and small size respectively.
+            </p>
+
+            <div class="btn_main_container size_btn_container">
+              <a class="btn primary_solid_btn large_btn">Large CTA</a>
+              <a class="btn primary_solid_btn small_btn">Small CTA</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card_container">
+          <h1 class="component_main_heading">Cards</h1>
+          <p class="para_font-size1">
+            Product card is widely used in ecommerce websites and
+            applications.Product cards aim to capture the interest of viewers
+            most especially that being catchy in a shopping platform attracts
+            curious eyes and usually a possible sale.
+          </p>
+
+          <div class="cards">
+            <div class="card_main_container">
+              <img src="../images/aa.jpg" />
+              <div class="card_content">
+                <h2>Alag Aasmaan</h2>
+                <p>by Anuv Jain</p>
+                <p>
+                  "Alag Aasmaan” is the fifth studio single by Anuv Jain. It is
+                  a beautiful song about a long-distance relationship where it’s
+                  hard to bid farewell.
+                </p>
+              </div>
+              <div class="card_footer">
+                <div class="card_buttons">
+                  <button>Listen</button>
+                  <button>Lyrics</button>
+                </div>
+                <div class="card_icons">
+                  <button><img src="../images/heart.png" /></button>
+                  <button><img src="../images/send.png" /></button>
+                  <button><img src="../images/dots.png" /></button>
+                </div>
+              </div>
+            </div>
+
+            <div class="card_main_container">
+              <div class="card_owner">
+                <h2>Alag Aasmaan</h2>
+                <p>by Anuv Jain</p>
+              </div>
+              <img src="../images/aa.jpg" />
+              <div class="card_content">
+                <p>
+                  "Alag Aasmaan” is the fifth studio single by Anuv Jain. It is
+                  a beautiful song about a long-distance relationship where it’s
+                  hard to bid farewell.
+                </p>
+              </div>
+              <div class="card_footer">
+                <div class="card_buttons">
+                  <button>Listen</button>
+                  <button>Lyrics</button>
+                </div>
+                <div class="card_icons">
+                  <button><img src="../images/heart.png" /></button>
+                  <button><img src="../images/send.png" /></button>
+                  <button><img src="../images/dots.png" /></button>
+                </div>
+              </div>
+            </div>
+
+            <div class="card_main_container">
+              <img src="../images/aa.jpg" />
+              <div class="card_content">
+                <h2>Alag Aasmaan</h2>
+                <p>by Anuv Jain</p>
+              </div>
+              <div class="card_footer">
+                <div class="card_buttons">
+                  <button>Listen</button>
+                  <button>Lyrics</button>
+                </div>
+                <div class="card_icons">
+                  <button><img src="../images/heart.png" /></button>
+                  <button><img src="../images/send.png" /></button>
+                  <button><img src="../images/dots.png" /></button>
+                </div>
+              </div>
+            </div>
+
+            <div class="card_main_container">
+              <img src="../images/aa.jpg" />
+              <div class="card_owner_overlap">
+                <h2>Alag Aasmaan</h2>
+                <p>by Anuv Jain</p>
+              </div>
+              <div class="card_content">
+                <p>
+                  "Alag Aasmaan” is the fifth studio single by Anuv Jain. It is
+                  a beautiful song about a long-distance relationship where it’s
+                  hard to bid farewell.
+                </p>
+              </div>
+              <div class="card_footer">
+                <div class="card_buttons">
+                  <button>Listen</button>
+                  <button>Lyrics</button>
+                </div>
+                <div class="card_icons">
+                  <button><img src="../images/heart.png" /></button>
+                  <button><img src="../images/send.png" /></button>
+                  <button><img src="../images/dots.png" /></button>
+                </div>
+              </div>
+            </div>
+
+            <div class="card_main_container">
+              <img src="../images/aa.jpg" />
+              <div class="card_content">
+                <h2>Alag Aasmaan</h2>
+                <p>by Anuv Jain</p>
+                <p>
+                  "Alag Aasmaan” is the fifth studio single by Anuv Jain. It is
+                  a beautiful song about a long-distance relationship where it’s
+                  hard to bid farewell.
+                </p>
+              </div>
+              <div class="card_footer">
+                <div class="card_icons">
+                  <button><img src="../images/heart.png" /></button>
+                  <button><img src="../images/send.png" /></button>
+                  <button><img src="../images/dots.png" /></button>
+                </div>
+              </div>
+            </div>
+
+            <div class="card_main_container">
+              <img src="../images/aa.jpg" />
+              <div class="card_content">
+                <h2>Alag Aasmaan</h2>
+                <p>by Anuv Jain</p>
+                <p>
+                  "Alag Aasmaan” is the fifth studio single by Anuv Jain. It is
+                  a beautiful song about a long-distance relationship where it’s
+                  hard to bid farewell.
+                </p>
+              </div>
+              <div class="card_footer">
+                <div class="card_buttons">
+                  <button>Listen</button>
+                  <button>Lyrics</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="code_container">
+            <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%28249%2C237%2C212%2C1%29&t=twilight&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=16px&ph=20px&ln=false&fl=1&fm=IBM+Plex+Mono&fs=14px&lh=143%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522card_main_container%2522%253E%250A%2520%2520%253Cimg%2520src%253D%2522..%252Fimages%252Faa.jpg%2522%2520%252F%253E%250A%2520%2520%253Cdiv%2520class%253D%2522card_content%2522%253E%250A%2520%2520%2520%2520%253Ch2%253EAlag%2520Aasmaan%253C%252Fh2%253E%250A%2520%2520%2520%2520%253Cp%253Eby%2520Anuv%2520Jain%253C%252Fp%253E%250A%2520%2520%2520%2520%253Cp%253E%250A%2520%2520%2520%2520%2520%2520%2522Alag%2520Aasmaan%25E2%2580%259D%2520is%2520the%2520fifth%2520studio%2520single%2520by%2520Anuv%2520Jain.%2520It%2520is%2520a%2520beautiful%250A%2520%2520%2520%2520%2520%2520song%2520about%2520a%2520long-distance%2520relationship%2520where%2520it%25E2%2580%2599s%2520hard%2520to%2520bid%2520farewell.%250A%2520%2520%2520%2520%253C%252Fp%253E%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522card_footer%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card_buttons%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cbutton%253EListen%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%253Cbutton%253ELyrics%253C%252Fbutton%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card_icons%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522..%252Fimages%252Fheart.png%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%253Cbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522..%252Fimages%252Fsend.png%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%253Cbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522..%252Fimages%252Fdots.png%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A"
+              style="border: 0; overflow: hidden"
+              sandbox="allow-scripts allow-same-origin"
+            >
+            </iframe>
           </div>
         </div>
       </div>
-
-      <div class="button_main_container">
-      <h1 class="component_main_heading">Buttons</h1>
-      <p class="para_font-size1">
-        Buttons are also called as call to action. We have range of buttons
-        and their states. You may use a tag or button element, you need to add
-        respective classes, and you are good to go.
-      </p>
-      <h3>Example of Primary Button Styles</h3>
-      <p class="para_font-size">
-        Whenever you want your user to click on a link or button, use primary
-        style buttons.
-      </p>
-  
-      <div class="button_container">
-        <div class="btn_main_container">
-          <a class="btn flex-items primary_solid_btn">Primary Solid</a>
-          <a class="btn flex-items primary_outline_btn">Primary outline</a>
-          <a class="btn flex-items primary_icon_text_btn">
-            <div class="icon_text_btn">
-              <span><i class="fas fa-shopping-cart"></i></span> Add to cart
-            </div></a
-          >
-          <a class="flex-items primary_link_text">primary text</a>
-          <a class="flex-items icon_btn"
-            ><i class="fas fa-shopping-cart"></i
-          ></a>
-        </div>
-  
-        <h3>Example of Secondary Button Styles</h3>
-        <p class="para_font-size">
-          If you want user not to pay attention to buttons then use Secondary
-          buttons. You can directly copy below html code and use it in your
-          app.
-        </p>
-  
-        <div class="btn_main_container secondary_btn_container">
-          <a class="btn flex-items secondary_solid_btn">Secondary Solid</a>
-          <a class="btn flex-items secondary_outline_btn"
-            >Secondary outline</a
-          >
-          <a class="btn flex-items secondary_icon_text_btn">
-            <div class="icon_text_btn">
-              <span>
-                <i class="fas fa-trash"></i>
-              </span>
-              Delete
-            </div></a
-          >
-          <a class="flex-items secondary_link_text">Secondary text</a>
-          <a class="flex-items secondary_icon_btn"
-            ><i class="fas fa-trash"></i
-          ></a>
-        </div>
-  
-        <h3>Example of Disabled Button</h3>
-        <p class="para_font-size">
-          If you want to style disabled button add btn-disabled class and you
-          are good to go.
-        </p>
-        <div class="btn_main_container">
-          <a class="btn primary_solid_btn btn_disabled">Primary Solid</a>
-          <a class="btn secondary_icon_text_btn btn_disabled">
-            <div class="icon_text_btn">
-              <span><i class="fas fa-trash"></i></span>Delete
-            </div></a
-          >
-        </div>
-  
-        <h3>Example of Different Button Sizes</h3>
-        <p class="para_font-size">
-          If you want to have different size for your button, you can add
-          large_btn, small_btn class for large and small size respectively.
-        </p>
-  
-        <div class="btn_main_container size_btn_container">
-          <a class="btn primary_solid_btn large_btn">Large CTA</a>
-          <a class="btn primary_solid_btn small_btn">Small CTA</a>
-        </div>
+      <div class="doc_footer footer">
+        <img src="../images/github-sign.png" alt="" />
+        <img src="../images/linkedin (1).png" alt="" />
+        <img src="../images/twitter-sign.png" alt="" />
       </div>
     </div>
-    </div>
-
-    
-  </div>
-    <div class="doc_footer footer">
-      <img src="../images/github-sign.png" alt="" />
-      <img src="../images/linkedin (1).png" alt="" />
-      <img src="../images/twitter-sign.png" alt="" />
-    </div>
-  </div>
-  
-</body>
+  </body>
 </html>
