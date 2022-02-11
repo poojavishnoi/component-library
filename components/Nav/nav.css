@@ -88,7 +88,12 @@
   .burger {
     display: flex;
     align-items: center;
-    font-size: 1.5rem;
+    font-size: 1rem;
+  }
+
+  .navigation_main_container{
+    padding: 0.2rem;
+    border-radius: 0.2rem;
   }
 
   .brand_logo {
@@ -102,8 +107,8 @@
   .brand_title a {
     text-decoration: none;
     color: black;
-    font-size: 1.7rem;
-    margin-left: 1rem;
+    font-size: 1rem;
+    margin-left: 0.1rem;
   }
   .brand_nav_links {
     display: none;
@@ -111,6 +116,14 @@
 
   .nav_icons_container {
     margin-left: 0;
+  }
+
+  .nav_icon{
+    padding: 0;
+  }
+
+  .fa{
+    font-size: 0.8rem;
   }
 
   .nav_icon_name {
