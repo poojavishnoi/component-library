@@ -1,0 +1,131 @@
+
+:root {
+  --border-color: rgb(211, 211, 211);
+  --searchbar-background: rgb(235, 235, 235);
+}
+
+.navigation_container {
+  margin: 1rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid var(--border-color);
+
+}
+
+.navigation_container h5{
+  padding: 1rem 0 0 0;
+}
+
+.navigation_main_container {
+  border: 1px solid var(--border-color);
+  border-radius: 1rem;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.brand_logo img {
+  width: 3em;
+  height: 3rem;
+}
+
+.brand_title {
+  display: none;
+}
+
+.para_list{
+  padding: 1rem;
+}
+
+.nav_section {
+  display: flex;
+  align-items: center;
+  padding: 0 1rem;
+}
+
+.brand_nav_links ul {
+  display: flex;
+}
+
+.brand_nav_links li {
+  list-style: none;
+  padding: 0 0.7rem;
+}
+
+.nav_icons_container {
+  display: flex;
+  align-items: center;
+  margin-left: 1rem;
+}
+
+.nav_icon {
+  display: flex;
+  flex-direction: column;
+  padding: 0 1rem;
+  align-items: center;
+}
+.nav_searchbar input {
+  border: none;
+  background-color: transparent;
+}
+
+.nav_searchbar {
+  background-color: var(--searchbar-background);
+  display: flex;
+  padding: 0.5rem;
+  border-radius: 5px;
+}
+
+.fa {
+  font-size: 1.5em;
+}
+
+.burger {
+  display: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .burger {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+  }
+
+  .brand_logo {
+    display: none;
+  }
+
+  .brand_title {
+    display: inline;
+  }
+
+  .brand_title a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.7rem;
+    margin-left: 1rem;
+  }
+  .brand_nav_links {
+    display: none;
+  }
+
+  .nav_icons_container {
+    margin-left: 0;
+  }
+
+  .nav_icon_name {
+    display: none;
+  }
+
+  .profile_icon {
+    display: none;
+  }
+
+  .nav_searchbar input {
+    display: none;
+  }
+
+  .nav_searchbar {
+    background-color: transparent;
+  }
+}

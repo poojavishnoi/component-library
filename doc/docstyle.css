@@ -3,6 +3,7 @@
 @import url(../components/Badge/badge.css);
 @import url(../components/Avatar/avatar.css);
 @import url(../components/Alert/alert.css);
+@import url(../components/Nav/nav.css);
 
 body {
   font-family: "Roboto", sans-serif;
@@ -254,7 +255,8 @@ img {
 
   .avatar-container,
   .badge_container,
-  .alert_container {
+  .alert_container,
+  .nav_container {
     margin: 2rem 0rem;
     padding: 0rem 0rem 2rem 0rem;
   }
