@@ -169,6 +169,159 @@
             <span class="icon_badge">4</span>
           </div>
         </div>
+      </div>-->
+
+      <div class="image_container">
+        <h1 class="component_main_heading">Images</h1>
+        <p class="para_font-size1">
+          Images can be responsive to fit the parent's width, and also can be
+          customised to be round shaped
+        </p>
+        <h3>Example of Responsive Image</h3>
+        <p class="para_font-size">
+          You can add class img-responsive to make your image fit the width of
+          container. It's height will get adjusted by keeping the aspect ratio
+          same. If you want to change the aspect ratio, you will have to crop
+          the image.
+        </p>
+        <div class="image_main_container">
+          <img
+            class="img_responsive"
+            src="../images/profile2.jpg"
+            alt=""
+          />
+        </div>
+        <div class="code_container">
+          <iframe
+  src="https://carbon.now.sh/embed?bg=rgba%28249%2C237%2C212%2C1%29&t=twilight&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=16px&ph=20px&ln=false&fl=1&fm=IBM+Plex+Mono&fs=14px&lh=143%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522image_main_container%2522%253E%250A%2520%2520%253Cimg%2520class%253D%2522img_responsive%2522%2520src%253D%2522..%252Fimages%252Fprofile2.jpg%2522%2520alt%253D%2522%2522%2520%252F%253E%250A%253C%252Fdiv%253E%250A"
+  style="border:0;overflow:hidden;"
+  sandbox="allow-scripts allow-same-origin">
+</iframe>
+        </div> transform: scale(1);
+
+        <h3>Example of round images</h3>
+        <p class="para_font-size">You can add class img-round to make your image round shaped.</p>
+        <div class="image_main_container">
+          <img
+            class="img_round"
+            src="https://cdn.pixabay.com/photo/2017/10/26/14/06/lotus-2891216__340.jpg"
+            alt=""
+          />
+        </div>
+<div class="code_container">
+        <iframe
+  src="https://carbon.now.sh/embed?bg=rgba%28249%2C237%2C212%2C1%29&t=twilight&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=16px&ph=20px&ln=false&fl=1&fm=IBM+Plex+Mono&fs=14px&lh=143%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522image_main_container%2522%253E%250A%2520%2520%253Cimg%250A%2520%2520%2520%2520class%253D%2522img_round%2522%250A%2520%2520%2520%2520src%253D%2522https%253A%252F%252Fcdn.pixabay.com%252Fphoto%252F2017%252F10%252F26%252F14%252F06%252Flotus-2891216__340.jpg%2522%250A%2520%2520%2520%2520alt%253D%2522%2522%250A%2520%2520%252F%253E%250A%253C%252Fdiv%253E%250A"
+  style="border:0; overflow:hidden;"
+  sandbox="allow-scripts allow-same-origin">
+</iframe>
+</div>
+      </div>
+      
+      <div class="form_container font">
+        <h1 class="component_main_heading">Form</h1>
+        <p class="para_font-size1">There are form fields listed below and form validation is also styled.</p>
+        <h3>Example of Active form fields</h3>
+        <p class="para_font-size">Add form-label class to labels and form-input for input element, form-input, form-textarea for textarea element(mulitple lines input). <br>
+          Add form-label-required class to labels if the field is required, it will show star on the field</p>
+        <div class="form_main_container">
+          <label class="form_label form-label-required">Email Address</label>
+          <input type="email" class="form_input" placeholder="name@example.com" required>
+    
+          <label class="form_label">Example Textarea</label>
+          <textarea rows="3" class="form_input" placeholder="Start typing here.."></textarea>
+        </div>
+
+        <div class="code_container">
+          <iframe
+  src="https://carbon.now.sh/embed?bg=rgba%28249%2C237%2C212%2C1%29&t=twilight&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=16px&ph=20px&ln=false&fl=1&fm=IBM+Plex+Mono&fs=14px&lh=143%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522form_main_container%2522%253E%250A%2520%2520%253Clabel%2520class%253D%2522form_label%2520form-label-required%2522%253EEmail%2520Address%253C%252Flabel%253E%250A%2520%2520%253Cinput%2520type%253D%2522email%2522%2520class%253D%2522form_input%2522%2520placeholder%253D%2522name%2540example.com%2522%2520required%253E%250A%2520%2520%2520%2520%250A%2520%2520%253Clabel%2520class%253D%2522form_label%2522%253EExample%2520Textarea%253C%252Flabel%253E%250A%2520%2520%253Ctextarea%2520rows%253D%25223%2522%2520class%253D%2522form_input%2522%2520placeholder%253D%2522Start%2520typing%2520here..%2522%253E%253C%252Ftextarea%253E%250A%253C%252Fdiv%253E"
+  style="border:0; overflow:hidden;"
+  sandbox="allow-scripts allow-same-origin">
+</iframe>
+        </div>
+    
+        <h3>Example of Disabled/Read only form fields</h3>
+        <p  class="para_font-size">Add disabled attribute to your form element to make them disable. No need to add any extra class. <br>
+          Add readonly attribute to your form element to make them read-only. No need to add any extra class.</p>
+        <div class="form_main_container">
+          <input type="email" class="form_input" placeholder="Disabled input" disabled>
+          <input type="email" class="form_input" placeholder="Disabled readonly input" disabled readonly >
+        </div>
+    
+        <div class="code_container">
+          <iframe
+  src="https://carbon.now.sh/embed?bg=rgba%28249%2C237%2C212%2C1%29&t=twilight&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=16px&ph=20px&ln=false&fl=1&fm=IBM+Plex+Mono&fs=14px&lh=143%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522form_main_container%2522%253E%250A%2520%2520%253Cinput%2520type%253D%2522email%2522%2520class%253D%2522form_input%2522%2520placeholder%253D%2522Disabled%2520input%2522%2520disabled%253E%250A%2520%2520%253Cinput%2520type%253D%2522email%2522%2520class%253D%2522form_input%2522%2520placeholder%253D%2522Disabled%2520readonly%2520input%2522%2520disabled%2520readonly%2520%253E%250A%253C%252Fdiv%253E"
+  style="border:0;overflow:hidden;"
+  sandbox="allow-scripts allow-same-origin">
+</iframe>
+        </div>
+        <h3>Example of Read only plain text form field</h3>
+        <p class="para_font-size">Add read-only attribute to your form element to make them read-only. Add form-field-plain-text class to form field element.</p>
+        <div class="form_main_container">
+          <div class="inline_form_input">
+          <label class="form_label">Email:</label>
+          <input type="email" class="form_input form_input_readonly" placeholder="name@example.com" readonly>
+        </div>
+        <div class="inline_form_input">
+          <label class="form_label" class="form-label-required">Enter Password:</label>
+          <input type="email" class="form_input" placeholder="Enter Password" >
+        </div>
+        </div>
+
+        <div class="code_container">
+          <iframe
+  src="https://carbon.now.sh/embed?bg=rgba%28249%2C237%2C212%2C1%29&t=twilight&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=16px&ph=20px&ln=false&fl=1&fm=IBM+Plex+Mono&fs=14px&lh=143%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522form_main_container%2522%253E%250A%2520%2520%253Cdiv%2520class%253D%2522inline_form_input%2522%253E%250A%2520%2520%2520%2520%253Clabel%2520class%253D%2522form_label%2522%253EEmail%253A%253C%252Flabel%253E%250A%2520%2520%2520%2520%253Cinput%2520type%253D%2522email%2522%2520class%253D%2522form_input%2520form_input_readonly%2522%2520placeholder%253D%2522name%2540example.com%2522%2520readonly%253E%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522inline_form_input%2522%253E%250A%2520%2520%2520%2520%253Clabel%2520class%253D%2522form_label%2522%2520class%253D%2522form-label-required%2522%253EEnter%2520Password%253C%252Flabel%253E%250A%2520%2520%2520%2520%253Cinput%2520type%253D%2522email%2522%2520class%253D%2522form_input%2522%2520placeholder%253D%2522Enter%2520Password%2522%2520%253E%250A%2520%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
+  style="border:0; overflow:hidden;"
+  sandbox="allow-scripts allow-same-origin">
+</iframe>
+        </div>
+    
+        <h3>Example of Form Validation</h3>
+        <p class="para_font-size">Below is the form validation example. You can have error message and check passed message on field level. For html and class, please check below html and for functionality, JavaScript code.</p>
+        <div class="form_main_container">
+            <form class="submit-form-example" novalidate>
+            <div class="inline_form_input">
+                <label class="form-label-required form_label">Enter phone number</label>
+                <input type="tel" class="form_input" placeholder="Enter mobile number" required>
+              </div>
+              <div class="inline_form_input">
+                <label class="form-label-required form_label">Enter country: </label>
+                
+                <select class="form_input form_input_select">
+                  <option value="India">India</option>
+                  <option value="America">America</option>
+                </select>
+              </div>
+    
+              <div class="inline_form_input">
+                  <label class="form_label">Gender</label>
+                  <span class="flex_radio_input">
+                    <input type="radio" name="gender" class="form_input flex_items">Male</input>
+                    <input type="radio" name="gender" class="form_input flex_items">Female</input>
+                  </span>
+              </div>
+    
+              <div class="inline_form_input">
+                  <label class="form-label-required form_label">Enter birthdate: </label>
+                  <input type="date" class="form_input" required>
+                </div>
+                <br/>
+    
+            <input class="form_input" type="checkbox"></input>
+            <label class="form-label-required form_label"> Yes, I accept the terms</label>
+            <br>
+            <button class="btn" type="submit">Submit</button>
+            </form>
+        </div>
+
+        <div class="code_container">
+          <iframe
+  src="https://carbon.now.sh/embed?bg=rgba%28249%2C237%2C212%2C1%29&t=twilight&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=16px&ph=20px&ln=false&fl=1&fm=IBM+Plex+Mono&fs=14px&lh=143%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522form_main_container%2522%253E%250A%2520%2520%253Cform%2520class%253D%2522submit-form-example%2522%2520novalidate%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522inline_form_input%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%253Clabel%2520class%253D%2522form-label-required%2520form_label%2522%253EEnter%2520phone%2520number%253C%252Flabel%253E%250A%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520type%253D%2522tel%2522%2520class%253D%2522form_input%2522%2520placeholder%253D%2522Enter%2520mobile%2520number%2522%2520required%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522inline_form_input%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%253Clabel%2520class%253D%2522form-label-required%2520form_label%2522%253EEnter%2520country%253A%2520%253C%252Flabel%253E%2520%2520%2520%2520%2520%2520%2520%2520%2520%250A%2520%2520%2520%2520%2520%2520%2520%253Cselect%2520class%253D%2522form_input%2520form_input_select%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Coption%2520value%253D%2522India%2522%253EIndia%253C%252Foption%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Coption%2520value%253D%2522America%2522%253EAmerica%253C%252Foption%253E%250A%2520%2520%2520%2520%2520%2520%2520%253C%252Fselect%253E%250A%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%250A%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522inline_form_input%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%253Clabel%2520class%253D%2522form_label%2522%253EGender%253C%252Flabel%253E%250A%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522flex_radio_input%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520type%253D%2522radio%2522%2520name%253D%2522gender%2522%2520class%253D%2522form_input%2520flex_items%2522%253EMale%253C%252Finput%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520type%253D%2522radio%2522%2520name%253D%2522gender%2522%2520class%253D%2522form_input%2520flex_items%2522%253EFemale%253C%252Finput%253E%250A%2520%2520%2520%2520%2520%2520%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%250A%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522inline_form_input%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%253Clabel%2520class%253D%2522form-label-required%2520form_label%2522%253EEnter%2520birthdate%253A%2520%253C%252Flabel%253E%250A%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520type%253D%2522date%2522%2520class%253D%2522form_input%2522%2520required%253E%250A%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%253Cbr%252F%253E%250A%2520%2520%2520%2520%250A%2520%2520%2520%2520%2520%253Cinput%2520class%253D%2522form_input%2522%2520type%253D%2522checkbox%2522%253E%253C%252Finput%253E%250A%2520%2520%2520%2520%2520%253Clabel%2520class%253D%2522form-label-required%2520form_label%2522%253E%2520Yes%252C%2520I%2520accept%2520the%2520terms%253C%252Flabel%253E%250A%2520%2520%2520%2520%2520%253Cbr%253E%250A%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2522%2520type%253D%2522submit%2522%253ESubmit%253C%252Fbutton%253E%250A%2520%2520%2520%253C%252Fform%253E%250A%253C%252Fdiv%253E"
+  style="border:0;overflow:hidden;"
+  sandbox="allow-scripts allow-same-origin">
+</iframe>
+        </div>
+    
+    
       </div>
 
       <div class="button_main_container">
@@ -248,6 +401,165 @@
         <div class="btn_main_container size_btn_container">
           <a class="btn primary_solid_btn large_btn">Large CTA</a>
           <a class="btn primary_solid_btn small_btn">Small CTA</a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="typography_container">
+      <h1 class="component_main_heading">Typography</h1>
+      <p class="para_font-size1">Check out below text utilities.</p>
+      <h3>Example of Heading text</h3>
+      <p class="para_font-size">
+        For heading u can use h1, h2, h3, h4, h5, h6 elements. The same
+        font-styling is present for class names h1, h2, h3, h4, h5, h6 class.
+        You can add one of these classes to style the text.
+      </p>
+      <div class="typography_main_container">
+        <h1 class="h1">H1 Heading</h1>
+        <h2 class="h2">H2 Heading</h2>
+        <h3 class="h3">H3 Heading</h3>
+        <h4 class="h4">H4 Heading</h4>
+        <h5 class="h5">H5 Heading</h5>
+        <h6 class="h6">H6 Heading</h6>
+      </div>
+
+
+			<div class="code_container">
+					<iframe
+					src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=twilight&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=21px&ph=21px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522typography_main_container%2522%253E%250A%2520%2520%253Ch1%2520class%253D%2522h1%2522%253EH1%2520Heading%253C%252Fh1%253E%250A%2520%2520%253Ch2%2520class%253D%2522h2%2522%253EH2%2520Heading%253C%252Fh2%253E%250A%2520%2520%253Ch3%2520class%253D%2522h3%2522%253EH3%2520Heading%253C%252Fh3%253E%250A%2520%2520%253Ch4%2520class%253D%2522h4%2522%253EH4%2520Heading%253C%252Fh4%253E%250A%2520%2520%253Ch5%2520class%253D%2522h5%2522%253EH5%2520Heading%253C%252Fh5%253E%250A%2520%2520%253Ch6%2520class%253D%2522h6%2522%253EH6%2520Heading%253C%252Fh6%253E%250A%253C%252Fdiv%253E%250A"
+					style="border:0; overflow:hidden;"
+					sandbox="allow-scripts allow-same-origin">
+				</iframe>
+			</div>
+
+      <h3>Example of Paragraph text</h3>
+      <p class="para_font-size">
+        For paragraph u can use p element.<br />
+        Other than this if you want to adjust text to small or large, you can
+        use large_para, small_para class.
+      </p>
+
+      <div class="typography_main_container">
+        <p class="large_para">Large Paragraph</p>
+        <p class="regular_para">Regular Paragraph</p>
+        <p class="medium_para">Medium Paragraph</p>
+        <p class="small_para">Small Paragraph</p>
+			</div>
+			
+			<div class="code_container">
+					<iframe
+					src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=twilight&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=21px&ph=21px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522typography_main_container%2522%253E%250A%2520%2520%253Cp%2520class%253D%2522large_para%2522%253ELarge%2520Paragraph%253C%252Fp%253E%250A%2520%2520%253Cp%2520class%253D%2522regular_para%2522%253ERegular%2520Paragraph%253C%252Fp%253E%250A%2520%2520%253Cp%2520class%253D%2522medium_para%2522%253EMedium%2520Paragraph%253C%252Fp%253E%250A%2520%2520%253Cp%2520class%253D%2522small_para%2522%253ESmall%2520Paragraph%253C%252Fp%253E%250A%253C%252Fdiv%253E%250A"
+					style="border:0;overflow:hidden;"
+					sandbox="allow-scripts allow-same-origin">
+				</iframe>
+			</div>
+
+      <h3>Example of Grey text and text aligments</h3>
+      <p class="para_font-size">
+        To align the text add left_align, right_align, center_align class to
+        wrapper element. To make the text color grey, add grey_text class to the
+        wrapper
+      </p>
+
+      <div class="typography_main_container">
+        <p class="grey_text left_align">Left aligned grey text</p>
+        <p class="grey_text center_align">Center aligned grey text</p>
+        <p class="grey_text right_align">Right aligned grey text</p>
+			</div>
+			
+			<div class="code_container">
+					<iframe
+					src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=twilight&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=21px&ph=21px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522typography_main_container%2522%253E%250A%2520%2520%253Cp%2520class%253D%2522grey_text%2520left_align%2522%253ELeft%2520aligned%2520grey%2520text%253C%252Fp%253E%250A%2520%2520%253Cp%2520class%253D%2522grey_text%2520center_align%2522%253ECenter%2520aligned%2520grey%2520text%253C%252Fp%253E%250A%2520%2520%253Cp%2520class%253D%2522grey_text%2520right_align%2522%253ERight%2520aligned%2520grey%2520text%253C%252Fp%253E%250A%253C%252Fdiv%253E%250A"
+					style="border:0; overflow:hidden;"
+					sandbox="allow-scripts allow-same-origin">
+				</iframe>
+			</div>
+      <div class="navigation_container">
+        <h1 class="component_main_heading">Navigation</h1>
+        <p class="para_font-size1">
+          Navigation bar is used to navigate through the web apps or websites.
+          This navigation component is responsive. It is a hamburger menu in
+          medium and small devices
+        </p>
+        <h3>Example of navigation</h3>
+        <h5>On L and XL screens</h5>
+        <ul class="para_list">
+          <li>Brand Logo</li>
+          <li>Navigation links</li>
+          <li>Search bar</li>
+          <li>Section to show icons and text below</li>
+        </ul>
+
+        <h5>On M,S and XS screens</h5>
+        <ul class="para_list">
+          <li>Brand title</li>
+          <li>Hamburger section</li>
+          <li>
+            Items of navigation links will be included inside hamburger section
+          </li>
+          <li>Section to show icons without text</li>
+        </ul>
+
+        <div class="navigation_main_container">
+
+          <div class="nav_section">
+            <div class="burger">
+                <i class="fas fa-bars"></i>
+            </div>
+            <div class="brand_logo">
+              <a href="#">
+                <img
+                  src="https://cdn.pixabay.com/photo/2016/12/07/15/15/lotus-with-hands-1889661_960_720.png"
+                  alt=""
+                />
+              </a>
+            </div>
+            <div class="brand_title">
+                <a href="#">
+                  NeoDev
+                </a>
+              </div>
+            <div class="brand_nav_links">
+              <ul>
+                <li>Buy</li>
+                <li>Rent</li>
+                <li>Sell</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="nav_section">
+
+            <div class="nav_searchbar">
+              <span><i class="fa fa-search fa"></i></span>
+              <input type="text" placeholder="Type to search"/>
+              
+            </div>
+            <div class="nav_icons_container">
+              <div class="nav_icon profile_icon">
+                  <span><i class=" fas fa-user-circle fa"></i></span>
+                  <span  class="nav_icon_name">Profile</span>
+              </div>
+              <div class="nav_icon">
+                <span><i class="cart_icon fas fa-shopping-cart fa"></i>
+                </span>
+                <span class="nav_icon_name">Cart</span>
+              </div>
+              <div class="nav_icon">
+                <span><i class=" wishlist_icon fas fa-heart fa"></i></i></span>
+                <span  class="nav_icon_name">Wishlist</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="code_container">
+          <iframe
+  src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=twilight&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=21px&ph=21px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522navigation_main_container%2522%253E%250A%2520%2520%253Cdiv%2520class%253D%2522nav_section%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522burger%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-bars%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522brand_logo%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520src%253D%2522https%253A%252F%252Fcdn.pixabay.com%252Fphoto%252F2016%252F12%252F07%252F15%252F15%252Flotus-with-hands-1889661_960_720.png%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520alt%253D%2522%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fa%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522brand_title%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523%2522%253ENeoDev%253C%252Fa%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522brand_nav_links%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cul%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%253EBuy%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%253ERent%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%253ESell%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Ful%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%253Cdiv%2520class%253D%2522nav_section%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522nav_searchbar%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fa%2520fa-search%2520fa%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%253Cinput%2520type%253D%2522text%2522%2520placeholder%253D%2522Type%2520to%2520search%2522%2520%252F%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522nav_icons_container%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522nav_icon%2520profile_icon%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522%2520fas%2520fa-user-circle%2520fa%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522nav_icon_name%2522%253EProfile%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522nav_icon%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522cart_icon%2520fas%2520fa-shopping-cart%2520fa%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522nav_icon_name%2522%253ECart%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522nav_icon%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522%2520wishlist_icon%2520fas%2520fa-heart%2520fa%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522nav_icon_name%2522%253EWishlist%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A"
+  style="border:0; overflow:hidden;"
+  sandbox="allow-scripts allow-same-origin">
+</iframe>
         </div>
       </div>
     </div>
