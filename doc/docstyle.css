@@ -1,9 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Bebas+Neue&family=IBM+Plex+Serif:wght@300&family=Lora&family=Merriweather:wght@300&family=Montserrat:wght@300&family=Roboto:wght@300&display=swap");
+@import url(../components/Form/form.css);
+@import url(../components/Image/image.css);
 @import url(../components/Button/button.css);
 @import url(../components/Badge/badge.css);
 @import url(../components/Avatar/avatar.css);
 @import url(../components/Alert/alert.css);
 @import url(../components/Snackbar/snackbar.css);
+@import url(../components/List/list.css);
+@import url(../components/Modal/modal.css);
+@import url(../components/Rating/rating.css);
+@import url(../components/Typography/typo.css);
+@import url(../components/Nav/nav.css);
+
 body {
   font-family: "Roboto", sans-serif;
 }
@@ -11,6 +19,18 @@ body {
 :root {
   --primary-color: #ff7474;
   --body-color: white;
+
+}
+
+.code_container{
+  margin: 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+.code_container iframe{
+  background-color: white;
+  width: 690px; height: 302px;
 }
 
 * {
@@ -160,10 +180,9 @@ img {
 
 /* Media queries */
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 600px) {
   .documentation {
     grid-template-columns: 20% 20% 20% 20% 20%;
-
     grid-template-areas:
       "header header header header header"
       "main main main main main"
@@ -254,7 +273,9 @@ img {
 
   .avatar-container,
   .badge_container,
-  .alert_container {
+  .alert_container,
+  .list_container, .button_container,
+  .nav_container {
     margin: 2rem 0rem;
     padding: 0rem 0rem 2rem 0rem;
   }
@@ -263,7 +284,6 @@ img {
     height: 1.5rem;
     margin: 0.5rem;
   }
-
 
   .code_container{
     padding: 2rem;
@@ -274,6 +294,5 @@ img {
     width: 390px; height: 200px;
     font-size: 0.2rem;
   }
-
 
 }

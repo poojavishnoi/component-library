@@ -1,28 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="docstyle.css">
-  <link
-  rel="stylesheet"
-  href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
-  integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
-  crossorigin="anonymous"
-/>
-  <title>NeoDev UI</title>
-</head>
-<body>
-  <div class="documentation">
-    <div class="doc_header">
-      <div class="header">
-        <div class="header_logo">
-          <a href="#"><h1>NeoDev UI</h1></a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="docstyle.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+      integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+      crossorigin="anonymous"
+    />
+    <title>NeoDev UI</title>
+  </head>
+  <body>
+    <div class="documentation">
+      <div class="doc_header">
+        <div class="header">
+          <div class="header_logo">
+            <a href="#"><h1>NeoDev UI</h1></a>
+          </div>
+          <div class="header_links_container">
+            <a class="header_link" href="/doc/doc.html">Documentation</a>
+            <a class="header_link" href="#">Github</a>
+          </div>
         </div>
-        <div class="header_links_container">
-          <a class="header_link" href="/doc/doc.html">Documentation</a>
-          <a class="header_link" href="#">Github</a>
+      </div>
+      <div class="doc_sidenav">
+        <h2>Components</h2>
+        <div class="doc_sidenav_list">
+          <ul>
+            <li><a href="#">Avatars</a></li>
+            <li><a href="#">Alerts</a></li>
+            <li><a href="#">Badge</a></li>
+            <li><a href="#">Button</a></li>
+            <li><a href="#">Cards</a></li>
+            <li><a href="#">Form</a></li>
+            <li><a href="#">Image</a></li>
+            <li><a href="#">List</a></li>
+            <li><a href="#">Modal</a></li>
+            <li><a href="#">Navigation</a></li>
+            <li><a href="#">Rating</a></li>
+            <li><a href="#">Slider</a></li>
+            <li><a href="#">Grid Simplified</a></li>
+            <li><a href="#">Typography</a></li>
+            <li><a href="#">Toast</a></li>
+          </ul>
         </div>
       </div>
     </div>
@@ -68,188 +91,719 @@
           </div>
           <div class="avatar avatar-medium">
             <img src="../images/profile.jpg" alt="" />
-          </div>
-          <div class="avatar avatar-small">
-            <img src="../images/profile.jpg" alt="" />
-          </div>
-          <div class="avatar avatar-extra-small">
-            <img src="../images/profile.jpg" alt="" />
+
+            <div class="doc_main">
+        <div class="avatar-container font">
+          <h1 class="component_main_heading">Avataars</h1>
+          <p class="para_font-size1">
+            Avatar can be used to show user's profile picture on profile
+            information page, on navigation bar, in blogs grid items.
+          </p>
+          <h3>Example of Image Avataar</h3>
+          <p class="para_font-size">
+            Avatar is available in 4 different sizes. You can use image in
+            Avatar. You need to include class avatar and for size add class
+            according to size avatar-large, avatar-medium, avatar-small,
+            avatar-extra-small (e.g. class="avatar avatar-large")
+          </p>
+          <div class="avataars">
+            <div class="avatar avatar-large">
+              <img src="../images/profile.jpg" alt="" />
+            </div>
+            <div class="avatar avatar-medium">
+              <img src="../images/profile.jpg" alt="" />
+            </div>
+            <div class="avatar avatar-small">
+              <img src="../images/profile.jpg" alt="" />
+            </div>
+            <div class="avatar avatar-extra-small">
+              <img src="../images/profile.jpg" alt="" />
+            </div>
           </div>
         </div>
+
+        <div class="alert_container">
+          <h1 class="component_main_heading">Alerts</h1>
+          <p class="para_font-size1">
+            Alerts are used to attract user's attention for important
+            information without interrupting the user's flow.
+          </p>
+          <h3>Examples of Alerts</h3>
+          <p class="para_font-size">
+            Alerts are available in 5 types- success alert, error alert, warning
+            alert, primary alert, secondary alert. To use this alert just use
+            class name alert-box and also add class according to alert type-
+            primary_alert, secondary_alert, danger_alert, successfull_alert,
+            warning_alert. (e.g.class="alert-box alert-primary"). You can copy
+            html part from below code snippet.
+          </p>
+          <div class="alert_main_container">
+            <div class="primary_alert alert">
+              <p>
+                A primary alert example with a text link
+                <a href="#">Click this link</a>
+              </p>
+            </div>
+            <div class="secondary_alert alert">
+              <p>A secondary alert example!!!</p>
+            </div>
+            <div class="successfull_alert alert">
+              <img src="../images/check.png" alt="" />
+              <p>A success alert example!!!!</p>
+            </div>
+
+            <div class="danger_alert alert">
+              <img src="../images/warning.png" alt="" />
+              <p>A danger alert example!!!!</p>
+            </div>
+
+            <div class="warning_alert alert">
+              <img src="../images/yellow-warning.png" alt="" />
+              <p>A warning alert example!!!!</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="badge_container">
+          <h1>Badge</h1>
+          <p class="para_font-size1">
+            Badges are being used to display a notification count or status
+            information
+          </p>
+          <h3>Example of Status Badge</h3>
+          <p class="para_font-size">
+            We have 2 types of status badges that can be integrated with
+            Avatars. You can show colors to show the online status of user. And
+            to show cart or notification count, you can use number badge. Check
+            code below to copy the html part as is.
+          </p>
+          <div class="avatar_badge_container">
+            <div class="avatar_badge">
+              <div class="avatar avatar-large">
+                <img src="../images/profile1.jpg" alt="" />
+              </div>
+              <span class="avatar_badge_online status_badge"></span>
+            </div>
+
+            <div class="avatar_badge">
+              <div class="avatar avatar-medium">
+                <img src="../images/profile2.jpg" alt="" />
+              </div>
+              <span class="avatar_badge_offline status_badge"></span>
+            </div>
+
+            <div class="avatar_badge">
+              <div class="avatar avatar-small">
+                <img src="../images/profile3.jpg" alt="" />
+              </div>
+              <span class="avatar_badge_away status_badge"></span>
+            </div>
+
+            <div class="avatar_badge">
+              <div class="badge_on_icon">
+                <img src="../images/home.png" />
+              </div>
+              <span class="icon_badge">4</span>
+            </div>
+          </div>
+        </div>
+
+      <div class="image_container">
+        <h1 class="component_main_heading">Images</h1>
+        <p class="para_font-size1">
+          Images can be responsive to fit the parent's width, and also can be
+          customised to be round shaped
+        </p>
+        <h3>Example of Responsive Image</h3>
+        <p class="para_font-size">
+          You can add class img-responsive to make your image fit the width of
+          container. It's height will get adjusted by keeping the aspect ratio
+          same. If you want to change the aspect ratio, you will have to crop
+          the image.
+        </p>
+        <div class="image_main_container">
+          <img
+            class="img_responsive"
+            src="../images/profile2.jpg"
+            alt=""
+          />
+        </div>
+        <div class="code_container">
+          <iframe
+  src="https://carbon.now.sh/embed?bg=rgba%28249%2C237%2C212%2C1%29&t=twilight&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=16px&ph=20px&ln=false&fl=1&fm=IBM+Plex+Mono&fs=14px&lh=143%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522image_main_container%2522%253E%250A%2520%2520%253Cimg%2520class%253D%2522img_responsive%2522%2520src%253D%2522..%252Fimages%252Fprofile2.jpg%2522%2520alt%253D%2522%2522%2520%252F%253E%250A%253C%252Fdiv%253E%250A"
+  style="border:0;overflow:hidden;"
+  sandbox="allow-scripts allow-same-origin">
+</iframe>
+        </div> transform: scale(1);
+
+        <h3>Example of round images</h3>
+        <p class="para_font-size">You can add class img-round to make your image round shaped.</p>
+        <div class="image_main_container">
+          <img
+            class="img_round"
+            src="https://cdn.pixabay.com/photo/2017/10/26/14/06/lotus-2891216__340.jpg"
+            alt=""
+          />
+        </div>
+<div class="code_container">
+        <iframe
+  src="https://carbon.now.sh/embed?bg=rgba%28249%2C237%2C212%2C1%29&t=twilight&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=16px&ph=20px&ln=false&fl=1&fm=IBM+Plex+Mono&fs=14px&lh=143%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522image_main_container%2522%253E%250A%2520%2520%253Cimg%250A%2520%2520%2520%2520class%253D%2522img_round%2522%250A%2520%2520%2520%2520src%253D%2522https%253A%252F%252Fcdn.pixabay.com%252Fphoto%252F2017%252F10%252F26%252F14%252F06%252Flotus-2891216__340.jpg%2522%250A%2520%2520%2520%2520alt%253D%2522%2522%250A%2520%2520%252F%253E%250A%253C%252Fdiv%253E%250A"
+  style="border:0; overflow:hidden;"
+  sandbox="allow-scripts allow-same-origin">
+</iframe>
+</div>
+      </div>
+      
+      <div class="form_container font">
+        <h1 class="component_main_heading">Form</h1>
+        <p class="para_font-size1">There are form fields listed below and form validation is also styled.</p>
+        <h3>Example of Active form fields</h3>
+        <p class="para_font-size">Add form-label class to labels and form-input for input element, form-input, form-textarea for textarea element(mulitple lines input). <br>
+          Add form-label-required class to labels if the field is required, it will show star on the field</p>
+        <div class="form_main_container">
+          <label class="form_label form-label-required">Email Address</label>
+          <input type="email" class="form_input" placeholder="name@example.com" required>
+    
+          <label class="form_label">Example Textarea</label>
+          <textarea rows="3" class="form_input" placeholder="Start typing here.."></textarea>
+        </div>
+
+        <div class="code_container">
+          <iframe
+  src="https://carbon.now.sh/embed?bg=rgba%28249%2C237%2C212%2C1%29&t=twilight&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=16px&ph=20px&ln=false&fl=1&fm=IBM+Plex+Mono&fs=14px&lh=143%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522form_main_container%2522%253E%250A%2520%2520%253Clabel%2520class%253D%2522form_label%2520form-label-required%2522%253EEmail%2520Address%253C%252Flabel%253E%250A%2520%2520%253Cinput%2520type%253D%2522email%2522%2520class%253D%2522form_input%2522%2520placeholder%253D%2522name%2540example.com%2522%2520required%253E%250A%2520%2520%2520%2520%250A%2520%2520%253Clabel%2520class%253D%2522form_label%2522%253EExample%2520Textarea%253C%252Flabel%253E%250A%2520%2520%253Ctextarea%2520rows%253D%25223%2522%2520class%253D%2522form_input%2522%2520placeholder%253D%2522Start%2520typing%2520here..%2522%253E%253C%252Ftextarea%253E%250A%253C%252Fdiv%253E"
+  style="border:0; overflow:hidden;"
+  sandbox="allow-scripts allow-same-origin">
+</iframe>
+        </div>
+    
+        <h3>Example of Disabled/Read only form fields</h3>
+        <p  class="para_font-size">Add disabled attribute to your form element to make them disable. No need to add any extra class. <br>
+          Add readonly attribute to your form element to make them read-only. No need to add any extra class.</p>
+        <div class="form_main_container">
+          <input type="email" class="form_input" placeholder="Disabled input" disabled>
+          <input type="email" class="form_input" placeholder="Disabled readonly input" disabled readonly >
+        </div>
+    
+        <div class="code_container">
+          <iframe
+  src="https://carbon.now.sh/embed?bg=rgba%28249%2C237%2C212%2C1%29&t=twilight&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=16px&ph=20px&ln=false&fl=1&fm=IBM+Plex+Mono&fs=14px&lh=143%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522form_main_container%2522%253E%250A%2520%2520%253Cinput%2520type%253D%2522email%2522%2520class%253D%2522form_input%2522%2520placeholder%253D%2522Disabled%2520input%2522%2520disabled%253E%250A%2520%2520%253Cinput%2520type%253D%2522email%2522%2520class%253D%2522form_input%2522%2520placeholder%253D%2522Disabled%2520readonly%2520input%2522%2520disabled%2520readonly%2520%253E%250A%253C%252Fdiv%253E"
+  style="border:0;overflow:hidden;"
+  sandbox="allow-scripts allow-same-origin">
+</iframe>
+        </div>
+        <h3>Example of Read only plain text form field</h3>
+        <p class="para_font-size">Add read-only attribute to your form element to make them read-only. Add form-field-plain-text class to form field element.</p>
+        <div class="form_main_container">
+          <div class="inline_form_input">
+          <label class="form_label">Email:</label>
+          <input type="email" class="form_input form_input_readonly" placeholder="name@example.com" readonly>
+        </div>
+        <div class="inline_form_input">
+          <label class="form_label" class="form-label-required">Enter Password:</label>
+          <input type="email" class="form_input" placeholder="Enter Password" >
+        </div>
+        </div>
+
+        <div class="code_container">
+          <iframe
+  src="https://carbon.now.sh/embed?bg=rgba%28249%2C237%2C212%2C1%29&t=twilight&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=16px&ph=20px&ln=false&fl=1&fm=IBM+Plex+Mono&fs=14px&lh=143%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522form_main_container%2522%253E%250A%2520%2520%253Cdiv%2520class%253D%2522inline_form_input%2522%253E%250A%2520%2520%2520%2520%253Clabel%2520class%253D%2522form_label%2522%253EEmail%253A%253C%252Flabel%253E%250A%2520%2520%2520%2520%253Cinput%2520type%253D%2522email%2522%2520class%253D%2522form_input%2520form_input_readonly%2522%2520placeholder%253D%2522name%2540example.com%2522%2520readonly%253E%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522inline_form_input%2522%253E%250A%2520%2520%2520%2520%253Clabel%2520class%253D%2522form_label%2522%2520class%253D%2522form-label-required%2522%253EEnter%2520Password%253C%252Flabel%253E%250A%2520%2520%2520%2520%253Cinput%2520type%253D%2522email%2522%2520class%253D%2522form_input%2522%2520placeholder%253D%2522Enter%2520Password%2522%2520%253E%250A%2520%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
+  style="border:0; overflow:hidden;"
+  sandbox="allow-scripts allow-same-origin">
+</iframe>
+        </div>
+    
+        <h3>Example of Form Validation</h3>
+        <p class="para_font-size">Below is the form validation example. You can have error message and check passed message on field level. For html and class, please check below html and for functionality, JavaScript code.</p>
+        <div class="form_main_container">
+            <form class="submit-form-example" novalidate>
+            <div class="inline_form_input">
+                <label class="form-label-required form_label">Enter phone number</label>
+                <input type="tel" class="form_input" placeholder="Enter mobile number" required>
+              </div>
+              <div class="inline_form_input">
+                <label class="form-label-required form_label">Enter country: </label>
+                
+                <select class="form_input form_input_select">
+                  <option value="India">India</option>
+                  <option value="America">America</option>
+                </select>
+              </div>
+    
+              <div class="inline_form_input">
+                  <label class="form_label">Gender</label>
+                  <span class="flex_radio_input">
+                    <input type="radio" name="gender" class="form_input flex_items">Male</input>
+                    <input type="radio" name="gender" class="form_input flex_items">Female</input>
+                  </span>
+              </div>
+    
+              <div class="inline_form_input">
+                  <label class="form-label-required form_label">Enter birthdate: </label>
+                  <input type="date" class="form_input" required>
+                </div>
+                <br/>
+    
+            <input class="form_input" type="checkbox"></input>
+            <label class="form-label-required form_label"> Yes, I accept the terms</label>
+            <br>
+            <button class="btn" type="submit">Submit</button>
+            </form>
+        </div>
+
+        <div class="code_container">
+          <iframe
+  src="https://carbon.now.sh/embed?bg=rgba%28249%2C237%2C212%2C1%29&t=twilight&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=16px&ph=20px&ln=false&fl=1&fm=IBM+Plex+Mono&fs=14px&lh=143%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522form_main_container%2522%253E%250A%2520%2520%253Cform%2520class%253D%2522submit-form-example%2522%2520novalidate%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522inline_form_input%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%253Clabel%2520class%253D%2522form-label-required%2520form_label%2522%253EEnter%2520phone%2520number%253C%252Flabel%253E%250A%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520type%253D%2522tel%2522%2520class%253D%2522form_input%2522%2520placeholder%253D%2522Enter%2520mobile%2520number%2522%2520required%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522inline_form_input%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%253Clabel%2520class%253D%2522form-label-required%2520form_label%2522%253EEnter%2520country%253A%2520%253C%252Flabel%253E%2520%2520%2520%2520%2520%2520%2520%2520%2520%250A%2520%2520%2520%2520%2520%2520%2520%253Cselect%2520class%253D%2522form_input%2520form_input_select%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Coption%2520value%253D%2522India%2522%253EIndia%253C%252Foption%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Coption%2520value%253D%2522America%2522%253EAmerica%253C%252Foption%253E%250A%2520%2520%2520%2520%2520%2520%2520%253C%252Fselect%253E%250A%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%250A%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522inline_form_input%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%253Clabel%2520class%253D%2522form_label%2522%253EGender%253C%252Flabel%253E%250A%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522flex_radio_input%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520type%253D%2522radio%2522%2520name%253D%2522gender%2522%2520class%253D%2522form_input%2520flex_items%2522%253EMale%253C%252Finput%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520type%253D%2522radio%2522%2520name%253D%2522gender%2522%2520class%253D%2522form_input%2520flex_items%2522%253EFemale%253C%252Finput%253E%250A%2520%2520%2520%2520%2520%2520%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%250A%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522inline_form_input%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%253Clabel%2520class%253D%2522form-label-required%2520form_label%2522%253EEnter%2520birthdate%253A%2520%253C%252Flabel%253E%250A%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520type%253D%2522date%2522%2520class%253D%2522form_input%2522%2520required%253E%250A%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%253Cbr%252F%253E%250A%2520%2520%2520%2520%250A%2520%2520%2520%2520%2520%253Cinput%2520class%253D%2522form_input%2522%2520type%253D%2522checkbox%2522%253E%253C%252Finput%253E%250A%2520%2520%2520%2520%2520%253Clabel%2520class%253D%2522form-label-required%2520form_label%2522%253E%2520Yes%252C%2520I%2520accept%2520the%2520terms%253C%252Flabel%253E%250A%2520%2520%2520%2520%2520%253Cbr%253E%250A%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2522%2520type%253D%2522submit%2522%253ESubmit%253C%252Fbutton%253E%250A%2520%2520%2520%253C%252Fform%253E%250A%253C%252Fdiv%253E"
+  style="border:0;overflow:hidden;"
+  sandbox="allow-scripts allow-same-origin">
+</iframe>
+        </div>
+    
+    
       </div>
 
-      <div class="alert_container">
-        <h1 class="component_main_heading">
-          Alerts
-     
-        </h1>
-        <p class="para_font-size1">
-          Alerts are used to attract user's attention for important
-          information without interrupting the user's flow.
-        </p>
-        <h3>
-          Examples of Alerts
-        </h3>
-        <p class="para_font-size">
-          Alerts are available in 5 types- success alert, error alert,
-          warning alert, primary alert, secondary alert. To use this alert
-          just use class name alert-box and also add class according to
-          alert type- primary_alert, secondary_alert, danger_alert,
-          successfull_alert, warning_alert. (e.g.class="alert-box
-          alert-primary"). You can copy html part from below code snippet.
-        </p>
-        <div class="alert_main_container">
-          <div class="primary_alert alert">
-            <p>
-              A primary alert example with a text link
-              <a href="#">Click this link</a>
-            </p>
-          </div>
-          <div class="secondary_alert alert">
-            <p>
-              A secondary alert example!!!
-            </p>
-          </div>
-          <div class="successfull_alert alert">
-            <img src="../images/check.png" alt="" />
-            <p>A success alert example!!!!</p>
-          </div>
+        <div class="button_main_container">
+          <h1 class="component_main_heading">Buttons</h1>
+          <p class="para_font-size1">
+            Buttons are also called as call to action. We have range of buttons
+            and their states. You may use a tag or button element, you need to
+            add respective classes, and you are good to go.
+          </p>
+          <h3>Example of Primary Button Styles</h3>
+          <p class="para_font-size">
+            Whenever you want your user to click on a link or button, use
+            primary style buttons.
+          </p>
 
-          <div class="danger_alert alert">
-            <img src="../images/warning.png" alt="" />
-            <p>A danger alert example!!!!</p>
-          </div>
+          <div class="button_container">
+            <div class="btn_main_container">
+              <a class="btn flex-items primary_solid_btn">Primary Solid</a>
+              <a class="btn flex-items primary_outline_btn">Primary outline</a>
+              <a class="btn flex-items primary_icon_text_btn">
+                <div class="icon_text_btn">
+                  <span><i class="fas fa-shopping-cart"></i></span> Add to cart
+                </div></a
+              >
+              <a class="flex-items primary_link_text">primary text</a>
+              <a class="flex-items icon_btn"
+                ><i class="fas fa-shopping-cart"></i
+              ></a>
+            </div>
 
-          <div class="warning_alert alert">
-            <img src="../images/yellow-warning.png" alt="" />
-            <p>A warning alert example!!!!</p>
+            <div class="code_container">
+              <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%28249%2C237%2C212%2C1%29&t=twilight&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=16px&ph=20px&ln=false&fl=1&fm=IBM+Plex+Mono&fs=14px&lh=143%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522btn_main_container%2522%253E%250A%2520%2520%253Ca%2520class%253D%2522btn%2520flex-items%2520primary_solid_btn%2522%253EPrimary%2520Solid%253C%252Fa%253E%250A%2520%2520%253Ca%2520class%253D%2522btn%2520flex-items%2520primary_outline_btn%2522%253EPrimary%2520outline%253C%252Fa%253E%250A%2520%2520%253Ca%2520class%253D%2522btn%2520flex-items%2520primary_icon_text_btn%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522icon_text_btn%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-shopping-cart%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520Add%2520to%2520cart%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253C%252Fa%253E%250A%2520%2520%253Ca%2520class%253D%2522flex-items%2520primary_link_text%2522%253Eprimary%2520text%253C%252Fa%253E%250A%2520%2520%253Ca%2520class%253D%2522flex-items%2520icon_btn%2522%253E%250A%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-shopping-cart%2522%253E%253C%252Fi%253E%250A%2520%2520%253C%252Fa%253E%250A%253C%252Fdiv%253E%250A"
+                style="border: 0; overflow: hidden"
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </div>
+
+            <h3>Example of Secondary Button Styles</h3>
+            <p class="para_font-size">
+              If you want user not to pay attention to buttons then use
+              Secondary buttons. You can directly copy below html code and use
+              it in your app.
+            </p>
+
+            <div class="btn_main_container secondary_btn_container">
+              <a class="btn flex-items secondary_solid_btn">Secondary Solid</a>
+              <a class="btn flex-items secondary_outline_btn"
+                >Secondary outline</a
+              >
+              <a class="btn flex-items secondary_icon_text_btn">
+                <div class="icon_text_btn">
+                  <span>
+                    <i class="fas fa-trash"></i>
+                  </span>
+                  Delete
+                </div></a
+              >
+              <a class="flex-items secondary_link_text">Secondary text</a>
+              <a class="flex-items secondary_icon_btn"
+                ><i class="fas fa-trash"></i
+              ></a>
+            </div>
+
+            <div class="code_container">
+              <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%28249%2C237%2C212%2C1%29&t=twilight&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=16px&ph=20px&ln=false&fl=1&fm=IBM+Plex+Mono&fs=14px&lh=143%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522btn_main_container%2520secondary_btn_container%2522%253E%250A%2520%2520%253Ca%2520class%253D%2522btn%2520flex-items%2520secondary_solid_btn%2522%253ESecondary%2520Solid%253C%252Fa%253E%250A%2520%2520%253Ca%2520class%253D%2522btn%2520flex-items%2520secondary_outline_btn%2522%253ESecondary%2520outline%253C%252Fa%253E%250A%2520%2520%253Ca%2520class%253D%2522btn%2520flex-items%2520secondary_icon_text_btn%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522icon_text_btn%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-trash%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520Delete%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253C%252Fa%253E%250A%2520%2520%253Ca%2520class%253D%2522flex-items%2520secondary_link_text%2522%253ESecondary%2520text%253C%252Fa%253E%250A%2520%2520%253Ca%2520class%253D%2522flex-items%2520secondary_icon_btn%2522%253E%250A%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-trash%2522%253E%253C%252Fi%253E%250A%2520%2520%253C%252Fa%253E%250A%253C%252Fdiv%253E%250A"
+                style="border: 0; overflow: hidden"
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </div>
+
+            <h3>Example of Disabled Button</h3>
+            <p class="para_font-size">
+              If you want to style disabled button add btn-disabled class and
+              you are good to go.
+            </p>
+            <div class="btn_main_container">
+              <a class="btn primary_solid_btn btn_disabled">Primary Solid</a>
+              <a class="btn secondary_icon_text_btn btn_disabled">
+                <div class="icon_text_btn">
+                  <span><i class="fas fa-trash"></i></span>Delete
+                </div></a
+              >
+            </div>
+
+            <div class="code_container">
+              <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%28249%2C237%2C212%2C1%29&t=twilight&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=16px&ph=20px&ln=false&fl=1&fm=IBM+Plex+Mono&fs=14px&lh=143%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522btn_main_container%2522%253E%250A%2520%2520%253Ca%2520class%253D%2522btn%2520primary_solid_btn%2520btn_disabled%2522%253EPrimary%2520Solid%253C%252Fa%253E%250A%2520%2520%253Ca%2520class%253D%2522btn%2520secondary_icon_text_btn%2520btn_disabled%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522icon_text_btn%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-trash%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520Delete%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253C%252Fa%253E%250A%253C%252Fdiv%253E%250A"
+                style="border: 0; overflow: hidden"
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </div>
+
+            <h3>Example of Different Button Sizes</h3>
+            <p class="para_font-size">
+              If you want to have different size for your button, you can add
+              large_btn, small_btn class for large and small size respectively.
+            </p>
+
+            <div class="btn_main_container size_btn_container">
+              <a class="btn primary_solid_btn large_btn">Large CTA</a>
+              <a class="btn primary_solid_btn small_btn">Small CTA</a>
+            </div>
+
+            <div class="code_container">
+              <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%28249%2C237%2C212%2C1%29&t=twilight&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=16px&ph=20px&ln=false&fl=1&fm=IBM+Plex+Mono&fs=14px&lh=143%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522btn_main_container%2520size_btn_container%2522%253E%250A%2520%2520%253Ca%2520class%253D%2522btn%2520primary_solid_btn%2520large_btn%2522%253ELarge%2520CTA%253C%252Fa%253E%250A%2520%2520%253Ca%2520class%253D%2522btn%2520primary_solid_btn%2520small_btn%2522%253ESmall%2520CTA%253C%252Fa%253E%250A%253C%252Fdiv%253E%250A"
+                style="border: 0; overflow: hidden"
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </div>
           </div>
         </div>
+      
+    <div class="typography_container">
+      <h1 class="component_main_heading">Typography</h1>
+      <p class="para_font-size1">Check out below text utilities.</p>
+      <h3>Example of Heading text</h3>
+      <p class="para_font-size">
+        For heading u can use h1, h2, h3, h4, h5, h6 elements. The same
+        font-styling is present for class names h1, h2, h3, h4, h5, h6 class.
+        You can add one of these classes to style the text.
+      </p>
+      <div class="typography_main_container">
+        <h1 class="h1">H1 Heading</h1>
+        <h2 class="h2">H2 Heading</h2>
+        <h3 class="h3">H3 Heading</h3>
+        <h4 class="h4">H4 Heading</h4>
+        <h5 class="h5">H5 Heading</h5>
+        <h6 class="h6">H6 Heading</h6>
       </div>
 
       <div class="badge_container">
-        <h1>Badge</h1>
+        <h1 class="component_main_heading">Badge</h1>
+
+			<div class="code_container">
+					<iframe
+					src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=twilight&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=21px&ph=21px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522typography_main_container%2522%253E%250A%2520%2520%253Ch1%2520class%253D%2522h1%2522%253EH1%2520Heading%253C%252Fh1%253E%250A%2520%2520%253Ch2%2520class%253D%2522h2%2522%253EH2%2520Heading%253C%252Fh2%253E%250A%2520%2520%253Ch3%2520class%253D%2522h3%2522%253EH3%2520Heading%253C%252Fh3%253E%250A%2520%2520%253Ch4%2520class%253D%2522h4%2522%253EH4%2520Heading%253C%252Fh4%253E%250A%2520%2520%253Ch5%2520class%253D%2522h5%2522%253EH5%2520Heading%253C%252Fh5%253E%250A%2520%2520%253Ch6%2520class%253D%2522h6%2522%253EH6%2520Heading%253C%252Fh6%253E%250A%253C%252Fdiv%253E%250A"
+					style="border:0; overflow:hidden;"
+					sandbox="allow-scripts allow-same-origin">
+				</iframe>
+			</div>
+
+      <h3>Example of Paragraph text</h3>
+      <p class="para_font-size">
+        For paragraph u can use p element.<br />
+        Other than this if you want to adjust text to small or large, you can
+        use large_para, small_para class.
+      </p>
+
+      <div class="typography_main_container">
+        <p class="large_para">Large Paragraph</p>
+        <p class="regular_para">Regular Paragraph</p>
+        <p class="medium_para">Medium Paragraph</p>
+        <p class="small_para">Small Paragraph</p>
+			</div>
+			
+			<div class="code_container">
+					<iframe
+					src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=twilight&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=21px&ph=21px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522typography_main_container%2522%253E%250A%2520%2520%253Cp%2520class%253D%2522large_para%2522%253ELarge%2520Paragraph%253C%252Fp%253E%250A%2520%2520%253Cp%2520class%253D%2522regular_para%2522%253ERegular%2520Paragraph%253C%252Fp%253E%250A%2520%2520%253Cp%2520class%253D%2522medium_para%2522%253EMedium%2520Paragraph%253C%252Fp%253E%250A%2520%2520%253Cp%2520class%253D%2522small_para%2522%253ESmall%2520Paragraph%253C%252Fp%253E%250A%253C%252Fdiv%253E%250A"
+					style="border:0;overflow:hidden;"
+					sandbox="allow-scripts allow-same-origin">
+				</iframe>
+			</div>
+
+      <h3>Example of Grey text and text aligments</h3>
+      <p class="para_font-size">
+        To align the text add left_align, right_align, center_align class to
+        wrapper element. To make the text color grey, add grey_text class to the
+        wrapper
+      </p>
+
+      <div class="typography_main_container">
+        <p class="grey_text left_align">Left aligned grey text</p>
+        <p class="grey_text center_align">Center aligned grey text</p>
+        <p class="grey_text right_align">Right aligned grey text</p>
+			</div>
+			
+			<div class="code_container">
+					<iframe
+					src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=twilight&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=21px&ph=21px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522typography_main_container%2522%253E%250A%2520%2520%253Cp%2520class%253D%2522grey_text%2520left_align%2522%253ELeft%2520aligned%2520grey%2520text%253C%252Fp%253E%250A%2520%2520%253Cp%2520class%253D%2522grey_text%2520center_align%2522%253ECenter%2520aligned%2520grey%2520text%253C%252Fp%253E%250A%2520%2520%253Cp%2520class%253D%2522grey_text%2520right_align%2522%253ERight%2520aligned%2520grey%2520text%253C%252Fp%253E%250A%253C%252Fdiv%253E%250A"
+					style="border:0; overflow:hidden;"
+					sandbox="allow-scripts allow-same-origin">
+				</iframe>
+			</div>
+      <div class="navigation_container">
+        <h1 class="component_main_heading">Navigation</h1>
         <p class="para_font-size1">
-          Badges are being used to display a notification count or status
-          information
+          Navigation bar is used to navigate through the web apps or websites.
+          This navigation component is responsive. It is a hamburger menu in
+          medium and small devices
         </p>
-        <h3>Example of Status Badge</h3>
-        <p class="para_font-size">
-          We have 2 types of status badges that can be integrated with
-          Avatars. You can show colors to show the online status of user.
-          And to show cart or notification count, you can use number badge.
-          Check code below to copy the html part as is.
-        </p>
-        <div class="avatar_badge_container">
-          <div class="avatar_badge">
-            <div class="avatar avatar-large">
-              <img src="../images/profile1.jpg" alt="" />
+        <h3>Example of navigation</h3>
+        <h5>On L and XL screens</h5>
+        <ul class="para_list">
+          <li>Brand Logo</li>
+          <li>Navigation links</li>
+          <li>Search bar</li>
+          <li>Section to show icons and text below</li>
+        </ul>
+
+        <h5>On M,S and XS screens</h5>
+        <ul class="para_list">
+          <li>Brand title</li>
+          <li>Hamburger section</li>
+          <li>
+            Items of navigation links will be included inside hamburger section
+          </li>
+          <li>Section to show icons without text</li>
+        </ul>
+
+        <div class="navigation_main_container">
+
+          <div class="nav_section">
+            <div class="burger">
+                <i class="fas fa-bars"></i>
             </div>
-            <span class="avatar_badge_online status_badge"></span>
+            <div class="brand_logo">
+              <a href="#">
+                <img
+                  src="https://cdn.pixabay.com/photo/2016/12/07/15/15/lotus-with-hands-1889661_960_720.png"
+                  alt=""
+                />
+              </a>
+            </div>
+            <div class="brand_title">
+                <a href="#">
+                  NeoDev
+                </a>
+              </div>
+            <div class="brand_nav_links">
+              <ul>
+                <li>Buy</li>
+                <li>Rent</li>
+                <li>Sell</li>
+              </ul>
+            </div>
           </div>
 
-          <div class="avatar_badge">
-            <div class="avatar avatar-medium">
-              <img src="../images/profile2.jpg" alt="" />
-            </div>
-            <span class="avatar_badge_offline status_badge"></span>
-          </div>
+          <div class="nav_section">
 
-          <div class="avatar_badge">
-            <div class="avatar avatar-small">
-              <img src="../images/profile3.jpg" alt="" />
+            <div class="nav_searchbar">
+              <span><i class="fa fa-search fa"></i></span>
+              <input type="text" placeholder="Type to search"/>
+              
             </div>
-            <span class="avatar_badge_away status_badge"></span>
-          </div>
-
-          <div class="avatar_badge">
-            <div class="badge_on_icon">
-              <img src="../images/home.png" />
+            <div class="nav_icons_container">
+              <div class="nav_icon profile_icon">
+                  <span><i class=" fas fa-user-circle fa"></i></span>
+                  <span  class="nav_icon_name">Profile</span>
+              </div>
+              <div class="nav_icon">
+                <span><i class="cart_icon fas fa-shopping-cart fa"></i>
+                </span>
+                <span class="nav_icon_name">Cart</span>
+              </div>
+              <div class="nav_icon">
+                <span><i class=" wishlist_icon fas fa-heart fa"></i></i></span>
+                <span  class="nav_icon_name">Wishlist</span>
+              </div>
             </div>
-            <span class="icon_badge">4</span>
           </div>
         </div>
+
+        <div class="code_container">
+          <iframe
+  src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=twilight&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=21px&ph=21px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522navigation_main_container%2522%253E%250A%2520%2520%253Cdiv%2520class%253D%2522nav_section%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522burger%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-bars%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522brand_logo%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520src%253D%2522https%253A%252F%252Fcdn.pixabay.com%252Fphoto%252F2016%252F12%252F07%252F15%252F15%252Flotus-with-hands-1889661_960_720.png%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520alt%253D%2522%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fa%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522brand_title%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523%2522%253ENeoDev%253C%252Fa%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522brand_nav_links%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cul%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%253EBuy%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%253ERent%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%253ESell%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Ful%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%253Cdiv%2520class%253D%2522nav_section%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522nav_searchbar%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fa%2520fa-search%2520fa%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%253Cinput%2520type%253D%2522text%2522%2520placeholder%253D%2522Type%2520to%2520search%2522%2520%252F%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522nav_icons_container%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522nav_icon%2520profile_icon%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522%2520fas%2520fa-user-circle%2520fa%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522nav_icon_name%2522%253EProfile%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522nav_icon%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522cart_icon%2520fas%2520fa-shopping-cart%2520fa%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522nav_icon_name%2522%253ECart%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522nav_icon%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522%2520wishlist_icon%2520fas%2520fa-heart%2520fa%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522nav_icon_name%2522%253EWishlist%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A"
+  style="border:0; overflow:hidden;"
+  sandbox="allow-scripts allow-same-origin">
+</iframe>
+        </div>
       </div>
+    </div>
+
+      <div class="list_container ">
+        <h1  class="component_main_heading">Lists</h1>
+        <p class="para_font-size1">Lists can be used at so many places, navigation bar, stacked notifications, article pages, etc.</p>
+        <h3>Example of Unordered List with bullets</h3>
+        <p class="para_font-size">Add class according to bullet style. Copy html code below and add your desired list items.</p>
+        <div class="list_main_container">
+          <ul class="styled_list">
+            <li>Item1</li>
+            <li>Item2</li>
+            <li>Item3</li>
+          </ul>
+          <ul class="styled_list square_list_style">
+            <li>Item1</li>
+            <li>Item2</li>
+            <li>Item3</li>
+          </ul>
+          <ul class="styled_list circle_list_style">
+            <li>Item1</li>
+            <li>Item2</li>
+            <li>Item3</li>
+          </ul>
+      </div>
+
+      <div class="code_container">
+        <iframe
+  src="https://carbon.now.sh/embed?bg=rgba%28249%2C237%2C212%2C1%29&t=twilight&wt=none&l=auto&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=16px&ph=20px&ln=false&fl=1&fm=IBM+Plex+Mono&fs=14px&lh=143%25&si=false&es=2x&wm=false&code=%253Cul%2520class%253D%2522styled_list%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%253EItem1%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%253EItem2%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%253EItem3%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Ful%253E%250A%2520%2520%2520%2520%2520%2520%253Cul%2520class%253D%2522styled_list%2520square_list_style%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%253EItem1%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%253EItem2%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%253EItem3%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Ful%253E%250A%2520%2520%2520%2520%2520%2520%253Cul%2520class%253D%2522styled_list%2520circle_list_style%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%253EItem1%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%253EItem2%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%253EItem3%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Ful%253E"
+  style="border:0; overflow:hidden;"
+  sandbox="allow-scripts allow-same-origin">
+</iframe>
+      </div>
+      <h3>Example of Ordered List with bullets
+        </h3>
+      <p class="para_font-size">Add class according to bullet style. Copy html code below and add your desired list items. <br>
+          To reverse the order of ordered list, add reversed attribute to ol element</p>
+      <div class="list_main_container">
+        <ol class="styled_list">
+          <li>List with numbers</li>
+          <li>List with numbers</li>
+          <li>List with numbers</li>
+        </ol>
+        <ol class="styled_list lowAlpha_style">
+          <li>List with alphabet</li>
+          <li>List with alphabet</li>
+          <li>List with alphabet</li>
+        </ol>
+        <ol class="styled_list lowAlpha_style" reversed>
+          <li>Reversed list item</li>
+          <li>Reversed list item</li>
+          <li>Reversed list item</li>
+        </ol>
+        <ol class="styled_list capAlpha_style">
+          <li>List with capital alphabet</li>
+          <li>List with capital alphabet</li>
+          <li>List with capital alphabet</li>
+    
+        </ol>
+        <ol class="styled_list roman_style">
+          <li>List with roman style</li>
+          <li>List with roman style</li>
+          <li>List with roman style</li>
+        </ol>
+    </div>
+
+    <div class="code_container">
+      <iframe
+  src="https://carbon.now.sh/embed?bg=rgba%28249%2C237%2C212%2C1%29&t=twilight&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=16px&ph=20px&ln=false&fl=1&fm=IBM+Plex+Mono&fs=14px&lh=143%25&si=false&es=2x&wm=false&code=%2520%253Cdiv%2520class%253D%2522list_main_container%2522%253E%250A%2520%2520%2520%2520%253Col%2520class%253D%2522styled_list%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cli%253EList%2520with%2520numbers%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%253Cli%253EList%2520with%2520numbers%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%253Cli%253EList%2520with%2520numbers%253C%252Fli%253E%250A%2520%2520%2520%2520%253C%252Fol%253E%250A%2520%2520%2520%2520%253Col%2520class%253D%2522styled_list%2520lowAlpha_style%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cli%253EList%2520with%2520alphabet%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%253Cli%253EList%2520with%2520alphabet%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%253Cli%253EList%2520with%2520alphabet%253C%252Fli%253E%250A%2520%2520%2520%2520%253C%252Fol%253E%250A%2520%2520%2520%2520%253Col%2520class%253D%2522styled_list%2520lowAlpha_style%2522%2520reversed%253E%250A%2520%2520%2520%2520%2520%2520%253Cli%253EReversed%2520list%2520item%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%253Cli%253EReversed%2520list%2520item%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%253Cli%253EReversed%2520list%2520item%253C%252Fli%253E%250A%2520%2520%2520%2520%253C%252Fol%253E%250A%2520%2520%2520%2520%253Col%2520class%253D%2522styled_list%2520capAlpha_style%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cli%253EList%2520with%2520capital%2520alphabet%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%253Cli%253EList%2520with%2520capital%2520alphabet%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%253Cli%253EList%2520with%2520capital%2520alphabet%253C%252Fli%253E%250A%250A%2520%2520%2520%2520%253C%252Fol%253E%250A%2520%2520%2520%2520%253Col%2520class%253D%2522styled_list%2520roman_style%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cli%253EList%2520with%2520roman%2520style%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%253Cli%253EList%2520with%2520roman%2520style%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%253Cli%253EList%2520with%2520roman%2520style%253C%252Fli%253E%250A%2520%2520%2520%2520%253C%252Fol%253E%250A%253C%252Fdiv%253E"
+  style="border:0;overflow:hidden;"
+  sandbox="allow-scripts allow-same-origin">
+</iframe>
+    </div>
+    <h3>Example of List with no bullets and list with inline items</h3>
+    <p class="para_font-size">If you want list stacked but with no bullet and indentation, then you can add none_list_style class. <br>
+    
+      Class styled_list applies padding between two list items.</p>
+    <div class="list_main_container">
+      <ul class="styled_list none_list_style">
+        <li>Item1</li>
+        <li>Item2</li>
+        <li>Item3</li>
+      </ul>
+    
+      <ul class="none_list_style styled_list inline_items">
+          <li>Item1</li>
+          <li>Item2</li>
+          <li>Item3</li>
+      </ul>
+    </div>
+    </div> 
 
       <div class="button_main_container">
       <h1 class="component_main_heading">Buttons</h1>
+    <div class="rating_container">
+      <h1 class="component_main_heading">Rating</h1>
       <p class="para_font-size1">
-        Buttons are also called as call to action. We have range of buttons
-        and their states. You may use a tag or button element, you need to add
-        respective classes, and you are good to go.
+        Rating components can be used as read-only badge or in reviews section.
+        Can be used in reviews section as form too.
       </p>
-      <h3>Example of Primary Button Styles</h3>
-      <p class="para_font-size">
-        Whenever you want your user to click on a link or button, use primary
-        style buttons.
+      <h3>Example of read-only ratings</h3>
+      <p class="para_font-size">There are two types, input read-only and badge</p>
+
+      <div class="rating_main_container">
+        <div class="rating_star_container">
+          <i class="fas fa-star rating_star"></i>
+          <i class="fas fa-star rating_star"></i>
+          <i class="fas fa-star rating_star"></i>
+          <i class="fas fa-star rating_star"></i>
+          <i class="fas fa-star"></i>
+				</div>
+				
+				<div class="rating_badge_container">
+					<span>5</span>
+					<span><i class="fas fa-star rating_star"></i></span>
+					<span>|</span>
+					<span>5</span>
+				</div>
+			</div>
+			
+			<div class="code_container">
+					<iframe
+					src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=twilight&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=21px&ph=21px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522rating_main_container%2522%253E%250A%2520%2520%253Cdiv%2520class%253D%2522rating_star_container%2522%253E%250A%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-star%2520rating_star%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-star%2520rating_star%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-star%2520rating_star%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-star%2520rating_star%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-star%2522%253E%253C%252Fi%253E%250A%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A"
+					style="border:0; overflow:hidden;"
+					sandbox="allow-scripts allow-same-origin">
+				</iframe>
+			</div>
+    </div>
+
+    <div class="modal_container">
+      <h1 class="component_main_heading">Modal</h1>
+      <p class="para_font-size1">
+        Modals are positioned over everything else in the document and remove
+        scroll from the page. It gets closed only with close button on modal
+        pop-up.
       </p>
-  
-      <div class="button_container">
-        <div class="btn_main_container">
-          <a class="btn flex-items primary_solid_btn">Primary Solid</a>
-          <a class="btn flex-items primary_outline_btn">Primary outline</a>
-          <a class="btn flex-items primary_icon_text_btn">
-            <div class="icon_text_btn">
-              <span><i class="fas fa-shopping-cart"></i></span> Add to cart
-            </div></a
-          >
-          <a class="flex-items primary_link_text">primary text</a>
-          <a class="flex-items icon_btn"
-            ><i class="fas fa-shopping-cart"></i
-          ></a>
+      <h3>Example of Modal</h3>
+      <p class="para_font-size">You need to have wrapper div modal_main_container class. Inside that, you can wrap content inside div.modal_content that you need to show in pop-up.
+        Check out below code.</p>
+      <div class="modal_main_container">
+        <div class="close_btn">
+          <a href="#">X</a>
         </div>
-  
-        <h3>Example of Secondary Button Styles</h3>
-        <p class="para_font-size">
-          If you want user not to pay attention to buttons then use Secondary
-          buttons. You can directly copy below html code and use it in your
-          app.
-        </p>
-  
-        <div class="btn_main_container secondary_btn_container">
-          <a class="btn flex-items secondary_solid_btn">Secondary Solid</a>
-          <a class="btn flex-items secondary_outline_btn"
-            >Secondary outline</a
-          >
-          <a class="btn flex-items secondary_icon_text_btn">
-            <div class="icon_text_btn">
-              <span>
-                <i class="fas fa-trash"></i>
-              </span>
-              Delete
-            </div></a
-          >
-          <a class="flex-items secondary_link_text">Secondary text</a>
-          <a class="flex-items secondary_icon_btn"
-            ><i class="fas fa-trash"></i
-          ></a>
-        </div>
-  
-        <h3>Example of Disabled Button</h3>
-        <p class="para_font-size">
-          If you want to style disabled button add btn-disabled class and you
-          are good to go.
-        </p>
-        <div class="btn_main_container">
-          <a class="btn primary_solid_btn btn_disabled">Primary Solid</a>
-          <a class="btn secondary_icon_text_btn btn_disabled">
-            <div class="icon_text_btn">
-              <span><i class="fas fa-trash"></i></span>Delete
-            </div></a
-          >
-        </div>
-  
-        <h3>Example of Different Button Sizes</h3>
-        <p class="para_font-size">
-          If you want to have different size for your button, you can add
-          large_btn, small_btn class for large and small size respectively.
-        </p>
-  
-        <div class="btn_main_container size_btn_container">
-          <a class="btn primary_solid_btn large_btn">Large CTA</a>
-          <a class="btn primary_solid_btn small_btn">Small CTA</a>
+        <div class="modal_content">
+          <div class="model_content_title">
+            <h3>Shop with exclusive offers</h3>
+          </div>
+          <div class="modal_content_desc">
+            <p>
+              White and blue printed playsuit with knot detail, has a shirt
+              collar, sleeveless, button closures
+            </p>
+          </div>
+          <div class="modal_content_btn secondary_btn_container">
+            <a href="#" class="btn secondary_solid_btn">Go back</a>
+            <a href="#" class="btn primary_solid_btn">Shop now</a>
+          </div>
         </div>
       </div>
+
+      <div class="code_container">
+        <iframe
+  src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=twilight&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=21px&ph=21px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522modal_main_container%2522%253E%250A%2520%2520%253Cdiv%2520class%253D%2522close_btn%2522%253E%250A%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523%2522%253EX%253C%252Fa%253E%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522modal_content%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522model_content_title%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Ch3%253EShop%2520with%2520exclusive%2520offers%253C%252Fh3%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522modal_content_desc%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520White%2520and%2520blue%2520printed%2520playsuit%2520with%2520knot%2520detail%252C%2520has%2520a%2520shirt%2520collar%252C%250A%2520%2520%2520%2520%2520%2520%2520%2520sleeveless%252C%2520button%2520closures%250A%2520%2520%2520%2520%2520%2520%253C%252Fp%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522modal_content_btn%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523%2522%2520class%253D%2522btn%2520secondary_solid_btn%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520Go%2520back%250A%2520%2520%2520%2520%2520%2520%253C%252Fa%253E%250A%2520%2520%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523%2522%2520class%253D%2522btn%2520primary_solid_btn%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520Shop%2520now%250A%2520%2520%2520%2520%2520%2520%253C%252Fa%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A"
+  style="border:0; overflow:hidden;"
+  sandbox="allow-scripts allow-same-origin">
+</iframe>
+      </div>
+
+     
     </div>
 
     <div class="font snackbar_main_container">
@@ -295,14 +849,16 @@
       </div>
     </div>
 
-    
-  </div>
     <div class="doc_footer footer">
       <img src="../images/github-sign.png" alt="" />
       <img src="../images/linkedin (1).png" alt="" />
       <img src="../images/twitter-sign.png" alt="" />
-    </div>
+
   </div>
   <script src="../components/Snackbar/snackbar.js"></script>
 </body>
+</html>
+  </div>
+
+  </body>
 </html>
