@@ -110,6 +110,7 @@ border-radius: 1rem;
 
   .cards {
     margin: 0.5rem;
+    padding: 1rem;
   }
 
   .card_main_container {
