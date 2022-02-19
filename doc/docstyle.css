@@ -8,6 +8,7 @@
 @import url(../components/Snackbar/snackbar.css);
 @import url(../components/Grid/grid.css);
 @import url(../components/List/list.css);
+@import url(../components/Card/card.css);
 @import url(../components/Modal/modal.css);
 @import url(../components/Rating/rating.css);
 @import url(../components/Typography/typo.css);
@@ -45,15 +46,16 @@ img {
   object-position: top center;
 }
 
-.code_container{
+.code_container {
   margin: 1rem;
   display: flex;
   justify-content: center;
 }
 
-.code_container iframe{
+.code_container iframe {
   background-color: white;
-  width: 690px; height: 302px;
+  width: 690px;
+  height: 302px;
 }
 
 /* Documentation page css */
@@ -157,7 +159,6 @@ img {
   transition: 0.3s ease;
 }
 
-
 /* Footer css */
 
 .footer {
@@ -177,7 +178,6 @@ img {
   grid-area: footer;
   background-color: var(--primary-color);
 }
-
 
 /* Media queries */
 
@@ -215,7 +215,7 @@ img {
   .para_font-size {
     font-size: 0.8rem;
   }
-  
+
   .avataars {
     padding: 0rem;
   }
@@ -275,6 +275,7 @@ img {
   .avatar-container,
   .badge_container,
   .alert_container,
+  .card_container,
   .list_container, .button_container,
   .nav_container {
     margin: 2rem 0rem;
@@ -286,14 +287,14 @@ img {
     margin: 0.5rem;
   }
 
-  .code_container{
+  .code_container {
     padding: 2rem;
-    
-  }
-  
-  .code_container iframe{
-    width: 390px; height: 200px;
-    font-size: 0.2rem;
   }
 
+  .code_container iframe {
+    width: 390px;
+    height: 200px;
+    font-size: 0.2rem;
+  }
 }
+
