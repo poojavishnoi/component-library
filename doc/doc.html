@@ -18,11 +18,11 @@
       <div class="doc_header">
         <div class="header">
           <div class="header_logo">
-            <a href="#"><h1>NeoDev UI</h1></a>
+            <a href="/index.html"><h1>NeoDev UI</h1></a>
           </div>
           <div class="header_links_container">
             <a class="header_link" href="/doc/doc.html">Documentation</a>
-            <a class="header_link" href="#">Github</a>
+            <a class="header_link" href="https://github.com/poojavishnoi/component-library"  target="_blank" >Github</a>
           </div>
         </div>
       </div>
@@ -31,6 +31,7 @@
         <h2>Components</h2>
         <div class="doc_sidenav_list">
           <ul>
+            <a href="getting_started"><li>Getting Started</li></a>
             <a href="#avatar"><li>Avatars</li></a>
             <a href="#alert"><li>Alerts</li></a>
             <a href="#badge"><li>Badge</li></a>
@@ -50,7 +51,21 @@
       </div>
   
       <div class="doc_main">
-        <div id="avatar" class="avatar-container font">
+
+        <div id="getting_started" class="getting_start_container">
+          <h1 class="component_main_heading">Getting Started</h1>
+          <p class="para_font-size1">To get started, you just have to copy this html tag in header.</p>
+
+          <div class="code_container">
+            <iframe
+  src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=twilight&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=21px&ph=21px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=https%253A%252F%252Fneodev-ui.netlify.app%252Fdoc%252Fdocstyle.css"
+  style="border:0;overflow:hidden;"
+  sandbox="allow-scripts allow-same-origin">
+</iframe>
+          </div>
+        </div>
+
+        <div id="avatar" class="avatar_container container font">
           <h1 class="component_main_heading">Avataars</h1>
           <p class="para_font-size1">
             Avatar can be used to show user's profile picture on profile
@@ -86,7 +101,7 @@
           </div>
         </div>
 
-        <div id="alert" class="alert_container">
+        <div id="alert" class="alert_container container">
           <h1 class="component_main_heading">Alerts</h1>
           <p class="para_font-size1">
             Alerts are used to attract user's attention for important
@@ -136,7 +151,7 @@
           </div>
         </div>
 
-        <div id="badge" class="badge_container">
+        <div id="badge" class="badge_container container">
           <h1>Badge</h1>
           <p class="para_font-size1">
             Badges are being used to display a notification count or status
@@ -188,7 +203,7 @@
           </div>
         </div>
 
-        <div id="image" class="image_container">
+        <div id="image" class="image_container container">
         <h1 class="component_main_heading">Images</h1>
         <p class="para_font-size1">
           Images can be responsive to fit the parent's width, and also can be
@@ -234,7 +249,7 @@
 </div>
         </div>
       
-      <div id="form" class="form_container font">
+      <div id="form" class="form_container container font">
         <h1 class="component_main_heading">Form</h1>
         <p class="para_font-size1">There are form fields listed below and form validation is also styled.</p>
         <h3>Example of Active form fields</h3>
@@ -341,7 +356,7 @@
     
       </div>
 
-        <div id="button" class="button_main_container">
+        <div id="button" class="button_main_container container">
           <h1 class="component_main_heading">Buttons</h1>
           <p class="para_font-size1">
             Buttons are also called as call to action. We have range of buttons
@@ -458,7 +473,7 @@
           </div>
         </div>
 
-        <div id="card" class="card_container">
+        <div id="card" class="card_container container">
           <h1 class="component_main_heading">Cards</h1>
           <p class="para_font-size1">
             Product card is widely used in ecommerce websites and
@@ -612,7 +627,7 @@
           </div>
         </div>
       
-    <div id="typography" class="typography_container">
+    <div id="typography" class="typography_container container">
       <h1 class="component_main_heading">Typography</h1>
       <p class="para_font-size1">Check out below text utilities.</p>
       <h3>Example of Heading text</h3>
@@ -682,7 +697,7 @@
 			</div>
       </div>
 
-      <div id="nav" class="navigation_container">
+      <div id="nav" class="navigation_container container">
         <h1 class="component_main_heading">Navigation</h1>
         <p class="para_font-size1">
           Navigation bar is used to navigate through the web apps or websites.
@@ -770,7 +785,7 @@
         </div>
       </div>
 
-      <div id="list" class="list_container ">
+      <div id="list" class="list_container container">
         <h1  class="component_main_heading">Lists</h1>
         <p class="para_font-size1">Lists can be used at so many places, navigation bar, stacked notifications, article pages, etc.</p>
         <h3>Example of Unordered List with bullets</h3>
@@ -859,7 +874,7 @@
     </div>
     </div> 
 
-    <div id="rating" class="rating_container">
+    <div id="rating" class="rating_container container">
       <h1 class="component_main_heading">Rating</h1>
       <p class="para_font-size1">
         Rating components can be used as read-only badge or in reviews section.
@@ -897,7 +912,7 @@
   </div>
 
 
-    <div id="modal" class="modal_container">
+    <div id="modal" class="modal_container container">
       <h1 class="component_main_heading">Modal</h1>
       <p class="para_font-size1">
         Modals are positioned over everything else in the document and remove
@@ -939,7 +954,7 @@
      
     </div>
 
-    <div id="toast" class="font snackbar_main_container">
+    <div id="toast" class="font snackbar_main_container container">
       <h1 class="component_main_heading">Snackbar</h1>
       <p class="para_font-size1">This component can be used for toast or snackbar component. Toast is mostly used to show feedback message. Snackbar is to used show message that need user action</p>
       <p class="para_font-size">Just add class as baseline_snackbar, leading_snackbar and stacked_snackbar along with snackbar_container. Also add id as baseline_snackbar, leading_snackbar and stacked_snackbar for functionality</p>
@@ -983,7 +998,7 @@
         </div>
 
       
-    <div id="grid" class="grid_container">
+    <div id="grid" class="grid_container container">
       <h1 class="component_main_heading">Grid</h1>
       <p class="para_font-size1">
         Use grid when you want sections in view. Check below some examples of
@@ -1095,9 +1110,9 @@
     </div>
 
     <div class="doc_footer footer">
-      <img src="../images/github-sign.png" alt="" />
-      <img src="../images/linkedin (1).png" alt="" />
-      <img src="../images/twitter-sign.png" alt="" />
+      <a href="https://github.com/poojavishnoi/"><img src="../images/github-sign.png" alt="" /></a>
+      <a href="https://www.linkedin.com/in/pooja-vishnoi-678873206/"><img src="../images/linkedin (1).png" alt="" /></a>
+      <a href="https://twitter.com/PoojaVishnoi29"><img src="../images/twitter-sign.png" alt="" /></a>
 
   </div>
 </div>

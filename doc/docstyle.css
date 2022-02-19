@@ -272,12 +272,7 @@ img {
     font-size: 0.6rem;
   }
 
-  .avatar-container,
-  .badge_container,
-  .alert_container,
-  .card_container,
-  .list_container, .button_container,
-  .nav_container {
+  .container {
     margin: 2rem 0rem;
     padding: 0rem 0rem 2rem 0rem;
   }
