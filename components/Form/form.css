@@ -68,7 +68,7 @@
   width: 10rem;
 }
 
-.btn {
+.form_container .btn {
   border: 1px solid var(--primary-color);
   padding: 0.7rem 1rem;
   border-radius: 8px;
@@ -79,7 +79,7 @@
   cursor: pointer;
 }
 
-.btn:hover {
+.form_container .btn:hover {
   transform: scale(1.2);
   transition: 0.3s ease;
 }
