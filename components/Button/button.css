@@ -76,6 +76,9 @@ i {
 .secondary_icon_text_btn,
 .secondary_icon_btn {
   color: var(--secondary-txt-color);
+  background-color: var(--secondary-color);
+
+
 }
 
 .secondary_link_text {
