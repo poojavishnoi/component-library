@@ -1,8 +1,9 @@
 :root {
   --primary-color: #ff6d6d;
   --disabled-bg-color: #f88e8e;
-  --secondary-color: rgb(213, 213, 213);
-  --secondary-txt-color: rgb(80, 80, 80);
+  --secondary-color: #d5d5d5;
+  --light-grey-color: #d3d3d3;
+  --secondary-txt-color: #505050;
 }
 
 .button_main_container {
@@ -10,7 +11,7 @@
 }
 
 .btn_main_container {
-  border: 1px solid lightgray;
+  border: 1px solid var(--light-grey-color);
   border-radius: 10px;
   padding: 3rem 2rem;
   margin-bottom: 1rem;
@@ -35,7 +36,7 @@
 
 .primary_solid_btn,
 .primary_icon_text_btn {
-  color: white;
+  color: var(--body-color);
   background-color: var(--primary-color);
 }
 
@@ -64,7 +65,7 @@ i {
 }
 
 .secondary_btn_container .btn {
-  border: 1px solid lightgray;
+  border: 1px solid  var(--light-grey-color);
 }
 
 .secondary_solid_btn {
@@ -86,10 +87,10 @@ i {
   color: var(--secondary-txt-color);
 }
 
-.btn_disabled {
-  border: 1px solid lightgray;
+.btn_main_container .btn_disabled {
+  border: 1px solid  var(--light-grey-color);
   opacity: 0.6;
-  cursor: text !important;
+  cursor: not-allowed ;
 }
 
 .size_btn_container .small_btn {

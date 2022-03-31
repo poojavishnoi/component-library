@@ -2,6 +2,8 @@
   --primary-color: #ff6d6d;
   --text-color: #494949;
   --border-color: #e0e0e0;
+  --success-color: #27a378;
+  --error-color: #CF000F;
 }
 
 * {
@@ -48,6 +50,7 @@
 .inline_form_input {
   display: flex;
   margin: 1rem;
+  /* width: 90%; */
   align-items: center;
 }
 
@@ -68,13 +71,34 @@
   width: 10rem;
 }
 
+.form-validation-msg{
+  margin-left: 1rem;
+  width: 100%;
+  display: none;
+}
+
+
+.form-field-error{
+  color: var(--error-color);
+}
+.form-field-success{
+  color: var(--success-color);
+}
+
+.form-validated :invalid~.form-field-error{
+  display: block;
+}
+.form-validated :valid~.form-field-success{
+  display: block;
+}
+
 .form_container .btn {
   border: 1px solid var(--primary-color);
   padding: 0.7rem 1rem;
   border-radius: 8px;
   background-color: var(--primary-color);
   margin-top: 2rem;
-  color: white;
+  color: var(--body-color);
   font-size: 1.1rem;
   cursor: pointer;
 }
