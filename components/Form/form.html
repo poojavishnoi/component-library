@@ -45,39 +45,46 @@
     <h3>Example of Form Validation</h3>
     <p>Below is the form validation example. You can have error message and check passed message on field level. For html and class, please check below html and for functionality, JavaScript code.</p>
     <div class="form_main_container">
-        <form class="submit-form-example" novalidate>
+      <form class="submit-form-example" novalidate>
         <div class="inline_form_input">
-            <label class="form-label-required-field form_label">Enter phone number</label>
-            <input type="tel" class="form_input" placeholder="Enter mobile number" required>
-          </div>
-          <div class="inline_form_input">
-            <label class="form-label-required-field form_label">Enter country: </label>
-            
-            <select class="form_input form_input_select">
-              <option value="India">India</option>
-              <option value="America">America</option>
-            </select>
-          </div>
-
-          <div class="inline_form_input">
-              <label class="form_label">Gender</label>
-              <span class="flex_radio_input">
-                <input type="radio" name="gender" class="form_input flex_items">Male</input>
-                <input type="radio" name="gender" class="form_input flex_items">Female</input>
-              </span>
-          </div>
-
-          <div class="inline_form_input">
-              <label class="form-label-required-field form_label">Enter birthdate: </label>
-              <input type="date" class="form_input" required>
-            </div>
+            <label class="form-label-required form_label">Enter phone number</label>
+            <input type="tel" class="form_input" placeholder="Enter mobile number" pattern="^(\+91)?\s?[1-9][0-9]{9}$" required>
             <br/>
+            <div class="form-validation-msg form-field-error"><span class="form-field-symbol"><i class="fas fa-exclamation-circle"></i></span>Please fill mobile number!</div>
+            <div class="form-validation-msg form-field-success"><span class="form-field-symbol"><i class="fas fa-check-circle"></i></span>check pass</div>
+          </div>
+        <div class="inline_form_input">
+          <label class="form-label-required form_label">Enter country: </label>
+          
+          <select class="form_input form_input_select">
+            <option value="India">India</option>
+            <option value="America">America</option>
+          </select>
+        </div>
 
-        <input class="form_input" type="checkbox"></input>
-        <label class="form-label-required-field form_label"> Yes, I accept the terms</label>
-        <br>
-        <button class="btn" type="submit">Submit</button>
-        </form>
+        <div class="inline_form_input">
+            <label class="form_label">Gender</label>
+            <span class="flex_radio_input">
+              <input type="radio" name="gender" class="form_input flex_items" checked>Male</input>
+              <input type="radio" name="gender" class="form_input flex_items">Female</input>
+            </span>
+        </div>
+
+        <div class="inline_form_input">
+            <label class="form-label-required form_label">Enter birthdate: </label>
+            <input type="date" class="form_input" required>
+            <div class="form-validation-msg form-field-error"><span class="form-field-symbol"><i class="fas fa-exclamation-circle"></i></span>Please fill mobile number!</div>
+            <div class="form-validation-msg form-field-success"><span class="form-field-symbol"><i class="fas fa-check-circle"></i></span>check pass</div>
+          </div>
+          <br/>
+
+      <input class="form_input" type="checkbox" required></input>
+      <label class="form-label-required form_label"> Yes, I accept the terms</label>
+      <div class="form-validation-msg form-field-error"><span class="form-field-symbol"><i class="fas fa-exclamation-circle"></i></span>Please fill mobile number!</div>
+      <div class="form-validation-msg form-field-success"><span class="form-field-symbol"><i class="fas fa-check-circle"></i></span>check pass</div>
+      <br>
+      <button class="btn" type="submit">Submit</button>
+      </form>
     </div>
 
 
